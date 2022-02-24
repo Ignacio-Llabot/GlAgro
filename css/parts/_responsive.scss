@@ -139,7 +139,7 @@
                     gap: 15px;
     
                     .mainArticle__Titulo1, .mainArticle__Titulo2{
-                        font-size: 19px;
+                        font-size: 1.5rem;
                         background-color: rgba(145, 143, 143, 0.925);
                         border-radius: 10px;
                         text-align: center;
@@ -151,7 +151,7 @@
                     }
     
                     .mainArticle__Texto1, .mainArticle__Texto2{
-                        font-size: 12px;
+                        font-size: 1.2rem;
                         background-color: rgba(145, 143, 143, 0.925);
                         margin-right: auto;
                         margin-left: auto;
@@ -195,6 +195,7 @@
             .clients__Title{
                 margin: 0px;
                 text-align: center;
+                font-size: 2rem;
             }
         
             .clients__Imgs{
@@ -232,12 +233,14 @@
         
                     .clients__Cite1, .clients__Name1, .clients__Cite2, .clients__Name2{
                         font-family: 'Merriweather', serif;
-                        font-size: 14px;
+                        font-size: 16px;
                     }
                 }
             }
         }
     }
+
+    /*TRABAJO*/
 
     .trabajo{
         display: grid;
@@ -249,7 +252,7 @@
         .trabajoTitle{
             display: flex;
             justify-content: center;
-            font-size: 22px;
+            font-size: 2rem;
         }
     
         .steps{
@@ -278,7 +281,7 @@
                 }
     
                 .steps__Title1, .steps__Title2, .steps__Title3{
-                    font-size: 12px;
+                    font-size: 18px;
                     margin-block-start: 0em;
                     margin-block-end: 0em;
                 }
@@ -307,20 +310,20 @@
                 overflow-y: auto;
     
                 .step1__Title, .step2__Title, .step3__Title{
-                    font-size: 18px;
+                    font-size: 1.3rem;
                     text-align: center;
                     margin: 10px;
                 }
                 
                 .step1__SubTitle, .step2__SubTitle, .step3__SubTitle{
-                    font-size: 16px;
+                    font-size: 1.1rem;
                     text-align: center;
                     font-family: 'Merriweather', serif;
                     margin: 5px;
                 }
                 
                 .step1__Text, .step2__Text, .step3__Text{
-                    font-size: 13px;
+                    font-size: 1rem;
                     font-family: 'Merriweather', serif;
                 }
             }
@@ -359,7 +362,7 @@
         .equipoTitle{
             display: flex;
             justify-content: center;
-            font-size: 22px;
+            font-size: 2rem;
         }
     
         .profile1, .profile2{
@@ -417,7 +420,7 @@
         justify-items: center;
     
         .areasTitle{
-            font-size: 22px;
+            font-size: 2rem;
             text-align: center;
         }
     
@@ -451,16 +454,17 @@
             overflow-y: auto;
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;
+            font-size: 1.3rem;
     
             h3{
-                font-size: 18px;
+                font-size: 1.1rem;
                 text-decoration: underline;
                 margin-top: 0%;
             }
     
             p{
                 font-family: 'Merriweather', serif;
-                font-size: 13px;
+                font-size: 1rem;
             }
         }
     }
@@ -626,65 +630,177 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 426px) {
 
 
+    /*INDEX*/
 
+    .index{
+        .mainArticle{
+            .mainArticle__Bloque1, .mainArticle__Bloque2{
+                .mainArticle__Div{   
+                    .mainArticle__Titulo1, .mainArticle__Titulo2{
+                        font-size: 19px;
+                    }
+    
+                    .mainArticle__Texto1, .mainArticle__Texto2{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    
+        .clients{
+            .clients__Comments{
+                .clients__Comment1, .clients__Comment2{
+                    .clients__Cite1, .clients__Name1, .clients__Cite2, .clients__Name2{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 
+    /*TRABAJO*/
 
+    .trabajo{
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 6rem;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    
+        .trabajoTitle{
+            display: flex;
+            justify-content: center;
+            font-size: 22px;
+        }
+    
+        .steps{
+            .steps__Step1, .steps__Step2, .steps__Step3{
+                .steps__Title1, .steps__Title2, .steps__Title3{
+                    font-size: 12px;
+                }
+            }
+        }
+    
+        .step1, .step2, .step3{
+           .step1__Div, .step2__Div, .step3__Div{
+                .step1__Title, .step2__Title, .step3__Title{
+                    font-size: 18px;
+                }
+                
+                .step1__SubTitle, .step2__SubTitle, .step3__SubTitle{
+                    font-size: 16px;
+                }
+                
+                .step1__Text, .step2__Text, .step3__Text{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 
+    /*EQUIPO*/
 
+    .equipo{
+        .equipoTitle{
+            font-size: 22px;
+        }
+    
+        .profile1, .profile2{
+            .profile1__Div, .profile2__Div{
+                .profile1__Name, .profile2__Name{
+                    font-size: 18px;
+                }
+                
+                .profile1__Desc, .profile2__Desc{
+                    font-size: 16px;
+                }
+                
+                .profile1__Text, .profile2__Text{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 
+    /*AREAS*/
 
+    .areas{
+        .areasTitle{
+            font-size: 22px;
+        }
+    
+        .areasText{
+            h3{
+                font-size: 18px;
+            }
+    
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    
+    /*CONTACTO*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .contacto{
+        .contactoTitle{
+            font-size: 22px;
+        }
+        .contactInfo{
+            .whatsapp, .phone, .mail{
+                .whatsapp__Number, .phone__Number, .mail__Mail{
+                    font-size: 16px;
+                }
+            }
+        }
+    
+        .mapInfo{
+            .mapInfo__Div{
+                flex-direction: column;
+                .adress, .location{
+                    .adress__Text, .location__Text{
+                        font-size: 16px;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+    
+    .contactForm{
+        h3{
+            font-size: 22px;
+        }
+    
+        form{
+            p{
+                label{
+                    font-size: 16px;
+                }
+    
+                input{
+                    font-size: 16px;
+                }
+    
+                textarea{
+                    font-size: 16px;
+                }
+            }
+    
+            button{
+                font-size: 16px;
+            }
+    
+            .aviso{
+                font-size: 13px;
+            }
+        }
+    }
 
 
 

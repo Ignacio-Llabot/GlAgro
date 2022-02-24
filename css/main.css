@@ -977,7 +977,7 @@ body {
     gap: 15px;
   }
   .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Titulo1, .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Titulo2, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Titulo1, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Titulo2 {
-    font-size: 19px;
+    font-size: 1.5rem;
     background-color: rgba(145, 143, 143, 0.925);
     border-radius: 10px;
     text-align: center;
@@ -989,7 +989,7 @@ body {
     margin-left: 20%;
   }
   .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Texto1, .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Texto2, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Texto1, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Texto2 {
-    font-size: 12px;
+    font-size: 1.2rem;
     background-color: rgba(145, 143, 143, 0.925);
     margin-right: auto;
     margin-left: auto;
@@ -1029,6 +1029,7 @@ body {
   .index .clients .clients__Title {
     margin: 0px;
     text-align: center;
+    font-size: 2rem;
   }
   .index .clients .clients__Imgs {
     background: none;
@@ -1078,8 +1079,9 @@ body {
   }
   .index .clients .clients__Comments .clients__Comment1 .clients__Cite1, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Cite2, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite1, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Cite2, .index .clients .clients__Comments .clients__Comment2 .clients__Name2 {
     font-family: 'Merriweather', serif;
-    font-size: 14px;
+    font-size: 16px;
   }
+  /*TRABAJO*/
   .trabajo {
     display: -ms-grid;
     display: grid;
@@ -1096,7 +1098,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 22px;
+    font-size: 2rem;
   }
   .trabajo .steps a {
     color: black;
@@ -1129,7 +1131,7 @@ body {
     margin-right: auto;
   }
   .trabajo .steps .steps__Step1 .steps__Title1, .trabajo .steps .steps__Step1 .steps__Title2, .trabajo .steps .steps__Step1 .steps__Title3, .trabajo .steps .steps__Step2 .steps__Title1, .trabajo .steps .steps__Step2 .steps__Title2, .trabajo .steps .steps__Step2 .steps__Title3, .trabajo .steps .steps__Step3 .steps__Title1, .trabajo .steps .steps__Step3 .steps__Title2, .trabajo .steps .steps__Step3 .steps__Title3 {
-    font-size: 12px;
+    font-size: 18px;
     -webkit-margin-before: 0em;
             margin-block-start: 0em;
     -webkit-margin-after: 0em;
@@ -1166,18 +1168,18 @@ body {
     overflow-y: auto;
   }
   .trabajo .step1 .step1__Div .step1__Title, .trabajo .step1 .step1__Div .step2__Title, .trabajo .step1 .step1__Div .step3__Title, .trabajo .step1 .step2__Div .step1__Title, .trabajo .step1 .step2__Div .step2__Title, .trabajo .step1 .step2__Div .step3__Title, .trabajo .step1 .step3__Div .step1__Title, .trabajo .step1 .step3__Div .step2__Title, .trabajo .step1 .step3__Div .step3__Title, .trabajo .step2 .step1__Div .step1__Title, .trabajo .step2 .step1__Div .step2__Title, .trabajo .step2 .step1__Div .step3__Title, .trabajo .step2 .step2__Div .step1__Title, .trabajo .step2 .step2__Div .step2__Title, .trabajo .step2 .step2__Div .step3__Title, .trabajo .step2 .step3__Div .step1__Title, .trabajo .step2 .step3__Div .step2__Title, .trabajo .step2 .step3__Div .step3__Title, .trabajo .step3 .step1__Div .step1__Title, .trabajo .step3 .step1__Div .step2__Title, .trabajo .step3 .step1__Div .step3__Title, .trabajo .step3 .step2__Div .step1__Title, .trabajo .step3 .step2__Div .step2__Title, .trabajo .step3 .step2__Div .step3__Title, .trabajo .step3 .step3__Div .step1__Title, .trabajo .step3 .step3__Div .step2__Title, .trabajo .step3 .step3__Div .step3__Title {
-    font-size: 18px;
+    font-size: 1.3rem;
     text-align: center;
     margin: 10px;
   }
   .trabajo .step1 .step1__Div .step1__SubTitle, .trabajo .step1 .step1__Div .step2__SubTitle, .trabajo .step1 .step1__Div .step3__SubTitle, .trabajo .step1 .step2__Div .step1__SubTitle, .trabajo .step1 .step2__Div .step2__SubTitle, .trabajo .step1 .step2__Div .step3__SubTitle, .trabajo .step1 .step3__Div .step1__SubTitle, .trabajo .step1 .step3__Div .step2__SubTitle, .trabajo .step1 .step3__Div .step3__SubTitle, .trabajo .step2 .step1__Div .step1__SubTitle, .trabajo .step2 .step1__Div .step2__SubTitle, .trabajo .step2 .step1__Div .step3__SubTitle, .trabajo .step2 .step2__Div .step1__SubTitle, .trabajo .step2 .step2__Div .step2__SubTitle, .trabajo .step2 .step2__Div .step3__SubTitle, .trabajo .step2 .step3__Div .step1__SubTitle, .trabajo .step2 .step3__Div .step2__SubTitle, .trabajo .step2 .step3__Div .step3__SubTitle, .trabajo .step3 .step1__Div .step1__SubTitle, .trabajo .step3 .step1__Div .step2__SubTitle, .trabajo .step3 .step1__Div .step3__SubTitle, .trabajo .step3 .step2__Div .step1__SubTitle, .trabajo .step3 .step2__Div .step2__SubTitle, .trabajo .step3 .step2__Div .step3__SubTitle, .trabajo .step3 .step3__Div .step1__SubTitle, .trabajo .step3 .step3__Div .step2__SubTitle, .trabajo .step3 .step3__Div .step3__SubTitle {
-    font-size: 16px;
+    font-size: 1.1rem;
     text-align: center;
     font-family: 'Merriweather', serif;
     margin: 5px;
   }
   .trabajo .step1 .step1__Div .step1__Text, .trabajo .step1 .step1__Div .step2__Text, .trabajo .step1 .step1__Div .step3__Text, .trabajo .step1 .step2__Div .step1__Text, .trabajo .step1 .step2__Div .step2__Text, .trabajo .step1 .step2__Div .step3__Text, .trabajo .step1 .step3__Div .step1__Text, .trabajo .step1 .step3__Div .step2__Text, .trabajo .step1 .step3__Div .step3__Text, .trabajo .step2 .step1__Div .step1__Text, .trabajo .step2 .step1__Div .step2__Text, .trabajo .step2 .step1__Div .step3__Text, .trabajo .step2 .step2__Div .step1__Text, .trabajo .step2 .step2__Div .step2__Text, .trabajo .step2 .step2__Div .step3__Text, .trabajo .step2 .step3__Div .step1__Text, .trabajo .step2 .step3__Div .step2__Text, .trabajo .step2 .step3__Div .step3__Text, .trabajo .step3 .step1__Div .step1__Text, .trabajo .step3 .step1__Div .step2__Text, .trabajo .step3 .step1__Div .step3__Text, .trabajo .step3 .step2__Div .step1__Text, .trabajo .step3 .step2__Div .step2__Text, .trabajo .step3 .step2__Div .step3__Text, .trabajo .step3 .step3__Div .step1__Text, .trabajo .step3 .step3__Div .step2__Text, .trabajo .step3 .step3__Div .step3__Text {
-    font-size: 13px;
+    font-size: 1rem;
     font-family: 'Merriweather', serif;
   }
   .trabajo .step1 .step1__Img, .trabajo .step1 .step2__Img, .trabajo .step1 .step3__Img, .trabajo .step2 .step1__Img, .trabajo .step2 .step2__Img, .trabajo .step2 .step3__Img, .trabajo .step3 .step1__Img, .trabajo .step3 .step2__Img, .trabajo .step3 .step3__Img {
@@ -1221,7 +1223,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 22px;
+    font-size: 2rem;
   }
   .equipo .profile1, .equipo .profile2 {
     display: -webkit-box;
@@ -1280,7 +1282,7 @@ body {
     justify-items: center;
   }
   .areas .areasTitle {
-    font-size: 22px;
+    font-size: 2rem;
     text-align: center;
   }
   .areas .areasButtons {
@@ -1319,15 +1321,16 @@ body {
     overflow-y: auto;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    font-size: 1.3rem;
   }
   .areas .areasText h3 {
-    font-size: 18px;
+    font-size: 1.1rem;
     text-decoration: underline;
     margin-top: 0%;
   }
   .areas .areasText p {
     font-family: 'Merriweather', serif;
-    font-size: 13px;
+    font-size: 1rem;
   }
   /*CONTACTO*/
   .contacto {
@@ -1529,6 +1532,110 @@ body {
   }
   .contactForm form .aviso {
     text-align: center;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  /*INDEX*/
+  .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Titulo1, .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Titulo2, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Titulo1, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Titulo2 {
+    font-size: 19px;
+  }
+  .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Texto1, .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Texto2, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Texto1, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Texto2 {
+    font-size: 12px;
+  }
+  .index .clients .clients__Comments .clients__Comment1 .clients__Cite1, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Cite2, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite1, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Cite2, .index .clients .clients__Comments .clients__Comment2 .clients__Name2 {
+    font-size: 14px;
+  }
+  /*TRABAJO*/
+  .trabajo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+    gap: 6rem;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  .trabajo .trabajoTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 22px;
+  }
+  .trabajo .steps .steps__Step1 .steps__Title1, .trabajo .steps .steps__Step1 .steps__Title2, .trabajo .steps .steps__Step1 .steps__Title3, .trabajo .steps .steps__Step2 .steps__Title1, .trabajo .steps .steps__Step2 .steps__Title2, .trabajo .steps .steps__Step2 .steps__Title3, .trabajo .steps .steps__Step3 .steps__Title1, .trabajo .steps .steps__Step3 .steps__Title2, .trabajo .steps .steps__Step3 .steps__Title3 {
+    font-size: 12px;
+  }
+  .trabajo .step1 .step1__Div .step1__Title, .trabajo .step1 .step1__Div .step2__Title, .trabajo .step1 .step1__Div .step3__Title, .trabajo .step1 .step2__Div .step1__Title, .trabajo .step1 .step2__Div .step2__Title, .trabajo .step1 .step2__Div .step3__Title, .trabajo .step1 .step3__Div .step1__Title, .trabajo .step1 .step3__Div .step2__Title, .trabajo .step1 .step3__Div .step3__Title, .trabajo .step2 .step1__Div .step1__Title, .trabajo .step2 .step1__Div .step2__Title, .trabajo .step2 .step1__Div .step3__Title, .trabajo .step2 .step2__Div .step1__Title, .trabajo .step2 .step2__Div .step2__Title, .trabajo .step2 .step2__Div .step3__Title, .trabajo .step2 .step3__Div .step1__Title, .trabajo .step2 .step3__Div .step2__Title, .trabajo .step2 .step3__Div .step3__Title, .trabajo .step3 .step1__Div .step1__Title, .trabajo .step3 .step1__Div .step2__Title, .trabajo .step3 .step1__Div .step3__Title, .trabajo .step3 .step2__Div .step1__Title, .trabajo .step3 .step2__Div .step2__Title, .trabajo .step3 .step2__Div .step3__Title, .trabajo .step3 .step3__Div .step1__Title, .trabajo .step3 .step3__Div .step2__Title, .trabajo .step3 .step3__Div .step3__Title {
+    font-size: 18px;
+  }
+  .trabajo .step1 .step1__Div .step1__SubTitle, .trabajo .step1 .step1__Div .step2__SubTitle, .trabajo .step1 .step1__Div .step3__SubTitle, .trabajo .step1 .step2__Div .step1__SubTitle, .trabajo .step1 .step2__Div .step2__SubTitle, .trabajo .step1 .step2__Div .step3__SubTitle, .trabajo .step1 .step3__Div .step1__SubTitle, .trabajo .step1 .step3__Div .step2__SubTitle, .trabajo .step1 .step3__Div .step3__SubTitle, .trabajo .step2 .step1__Div .step1__SubTitle, .trabajo .step2 .step1__Div .step2__SubTitle, .trabajo .step2 .step1__Div .step3__SubTitle, .trabajo .step2 .step2__Div .step1__SubTitle, .trabajo .step2 .step2__Div .step2__SubTitle, .trabajo .step2 .step2__Div .step3__SubTitle, .trabajo .step2 .step3__Div .step1__SubTitle, .trabajo .step2 .step3__Div .step2__SubTitle, .trabajo .step2 .step3__Div .step3__SubTitle, .trabajo .step3 .step1__Div .step1__SubTitle, .trabajo .step3 .step1__Div .step2__SubTitle, .trabajo .step3 .step1__Div .step3__SubTitle, .trabajo .step3 .step2__Div .step1__SubTitle, .trabajo .step3 .step2__Div .step2__SubTitle, .trabajo .step3 .step2__Div .step3__SubTitle, .trabajo .step3 .step3__Div .step1__SubTitle, .trabajo .step3 .step3__Div .step2__SubTitle, .trabajo .step3 .step3__Div .step3__SubTitle {
+    font-size: 16px;
+  }
+  .trabajo .step1 .step1__Div .step1__Text, .trabajo .step1 .step1__Div .step2__Text, .trabajo .step1 .step1__Div .step3__Text, .trabajo .step1 .step2__Div .step1__Text, .trabajo .step1 .step2__Div .step2__Text, .trabajo .step1 .step2__Div .step3__Text, .trabajo .step1 .step3__Div .step1__Text, .trabajo .step1 .step3__Div .step2__Text, .trabajo .step1 .step3__Div .step3__Text, .trabajo .step2 .step1__Div .step1__Text, .trabajo .step2 .step1__Div .step2__Text, .trabajo .step2 .step1__Div .step3__Text, .trabajo .step2 .step2__Div .step1__Text, .trabajo .step2 .step2__Div .step2__Text, .trabajo .step2 .step2__Div .step3__Text, .trabajo .step2 .step3__Div .step1__Text, .trabajo .step2 .step3__Div .step2__Text, .trabajo .step2 .step3__Div .step3__Text, .trabajo .step3 .step1__Div .step1__Text, .trabajo .step3 .step1__Div .step2__Text, .trabajo .step3 .step1__Div .step3__Text, .trabajo .step3 .step2__Div .step1__Text, .trabajo .step3 .step2__Div .step2__Text, .trabajo .step3 .step2__Div .step3__Text, .trabajo .step3 .step3__Div .step1__Text, .trabajo .step3 .step3__Div .step2__Text, .trabajo .step3 .step3__Div .step3__Text {
+    font-size: 13px;
+  }
+  /*EQUIPO*/
+  .equipo .equipoTitle {
+    font-size: 22px;
+  }
+  .equipo .profile1 .profile1__Div .profile1__Name, .equipo .profile1 .profile1__Div .profile2__Name, .equipo .profile1 .profile2__Div .profile1__Name, .equipo .profile1 .profile2__Div .profile2__Name, .equipo .profile2 .profile1__Div .profile1__Name, .equipo .profile2 .profile1__Div .profile2__Name, .equipo .profile2 .profile2__Div .profile1__Name, .equipo .profile2 .profile2__Div .profile2__Name {
+    font-size: 18px;
+  }
+  .equipo .profile1 .profile1__Div .profile1__Desc, .equipo .profile1 .profile1__Div .profile2__Desc, .equipo .profile1 .profile2__Div .profile1__Desc, .equipo .profile1 .profile2__Div .profile2__Desc, .equipo .profile2 .profile1__Div .profile1__Desc, .equipo .profile2 .profile1__Div .profile2__Desc, .equipo .profile2 .profile2__Div .profile1__Desc, .equipo .profile2 .profile2__Div .profile2__Desc {
+    font-size: 16px;
+  }
+  .equipo .profile1 .profile1__Div .profile1__Text, .equipo .profile1 .profile1__Div .profile2__Text, .equipo .profile1 .profile2__Div .profile1__Text, .equipo .profile1 .profile2__Div .profile2__Text, .equipo .profile2 .profile1__Div .profile1__Text, .equipo .profile2 .profile1__Div .profile2__Text, .equipo .profile2 .profile2__Div .profile1__Text, .equipo .profile2 .profile2__Div .profile2__Text {
+    font-size: 13px;
+  }
+  /*AREAS*/
+  .areas .areasTitle {
+    font-size: 22px;
+  }
+  .areas .areasText h3 {
+    font-size: 18px;
+  }
+  .areas .areasText p {
+    font-size: 13px;
+  }
+  /*CONTACTO*/
+  .contacto .contactoTitle {
+    font-size: 22px;
+  }
+  .contacto .contactInfo .whatsapp .whatsapp__Number, .contacto .contactInfo .whatsapp .phone__Number, .contacto .contactInfo .whatsapp .mail__Mail, .contacto .contactInfo .phone .whatsapp__Number, .contacto .contactInfo .phone .phone__Number, .contacto .contactInfo .phone .mail__Mail, .contacto .contactInfo .mail .whatsapp__Number, .contacto .contactInfo .mail .phone__Number, .contacto .contactInfo .mail .mail__Mail {
+    font-size: 16px;
+  }
+  .contacto .mapInfo .mapInfo__Div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto .mapInfo .mapInfo__Div .adress .adress__Text, .contacto .mapInfo .mapInfo__Div .adress .location__Text, .contacto .mapInfo .mapInfo__Div .location .adress__Text, .contacto .mapInfo .mapInfo__Div .location .location__Text {
+    font-size: 16px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contactForm h3 {
+    font-size: 22px;
+  }
+  .contactForm form p label {
+    font-size: 16px;
+  }
+  .contactForm form p input {
+    font-size: 16px;
+  }
+  .contactForm form p textarea {
+    font-size: 16px;
+  }
+  .contactForm form button {
+    font-size: 16px;
+  }
+  .contactForm form .aviso {
     font-size: 13px;
   }
 }
