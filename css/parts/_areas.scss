@@ -2,13 +2,13 @@
 .areas{
     display: grid;
     grid-template-rows: auto auto auto;
-    gap: 3rem;
+    gap: 6rem;
     margin-top: 5%;
     margin-bottom: 5%;
     justify-items: center;
 
     .areasTitle{
-        font-size: 22px;
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -38,20 +38,17 @@
         background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
         border-radius: 20px;
         box-shadow: 6.2px 12.5px 12.5px #0000004f;
-        height: 60vh;
-        overflow-y: auto;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        height: fit-content;
 
         h3{
-            font-size: 18px;
+            font-size: 1.5rem;
             text-decoration: underline;
             margin-top: 0%;
         }
 
         p{
             font-family: 'Merriweather', serif;
-            font-size: 13px;
+            font-size: 1.1rem;
         }
     }
 }

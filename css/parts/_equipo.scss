@@ -2,13 +2,13 @@
 .equipo{
     display: grid;
     grid-template-rows: auto, auto, auto;
-    gap: 3rem;
+    gap: 6rem;
     margin-bottom: 5%;
 
     .equipoTitle{
         display: flex;
         justify-content: center;
-        font-size: 22px;
+        font-size: 2rem;
     }
 
     .profile1, .profile2{
@@ -24,6 +24,8 @@
             margin-bottom: 5%;
             min-width: 165px;
             min-height: 155px;
+            max-width: 480px;
+            max-width: 450px;
         }
         
         .profile1__Div, .profile2__Div{
@@ -31,23 +33,24 @@
             padding: 10px 30px 10px 30px;
             border-radius: 10px;
             box-shadow: 6.2px 12.5px 12.5px #0000004f;
-            max-height: 440px;
-            overflow-y: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60vw;
 
             .profile1__Name, .profile2__Name{
-                font-size: 18px;
+                font-size: 1.5rem;
                 margin-bottom: 1px;
                 text-align: center;
             }
             
             .profile1__Desc, .profile2__Desc{
-                font-size: 16px;
+                font-size: 1.3rem;
                 text-align: center;
                 font-family: 'Merriweather', serif;
             }
             
             .profile1__Text, .profile2__Text{
-                font-size: 13px;
+                font-size: 1.1rem;
                 font-family: 'Merriweather', serif;
             }
         }

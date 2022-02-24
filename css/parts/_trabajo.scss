@@ -2,17 +2,18 @@
 .trabajo{
     display: grid;
     grid-template-rows: auto auto auto auto auto;
-    gap: 3rem;
+    gap: 6rem;
     margin-top: 5%;
     margin-bottom: 10%;
 
     .trabajoTitle{
         display: flex;
         justify-content: center;
-        font-size: 22px;
+        font-size: 2rem;
     }
 
     .steps{
+        justify-content: center;
         a{
             color: black;
             text-decoration: none;
@@ -38,7 +39,7 @@
             }
 
             .steps__Title1, .steps__Title2, .steps__Title3{
-                font-size: 12px;
+                font-size: 1.5rem;
                 margin-block-start: 0em;
                 margin-block-end: 0em;
             }
@@ -46,17 +47,16 @@
     }
 
     .step1, .step2, .step3{
-        background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
-       display: grid;
-       grid-template-columns: none;
-       grid-template-rows: auto auto;
+       background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
+       display: flex;
        gap: 0px;
        margin-left: auto;
        margin-right: auto;
        border-radius: 20px;
-       width: 90%;
-       height:110%;
+       width: 100%;
+       height:100%;
        box-shadow: 6.2px 12.5px 12.5px #0000004f;
+       padding: 5%;
 
        .step1__Div, .step2__Div, .step3__Div{
             display: flex;
@@ -67,27 +67,27 @@
             overflow-y: auto;
 
             .step1__Title, .step2__Title, .step3__Title{
-                font-size: 18px;
+                font-size: 1.3rem;
                 text-align: center;
                 margin: 10px;
             }
             
             .step1__SubTitle, .step2__SubTitle, .step3__SubTitle{
-                font-size: 16px;
+                font-size: 1.1rem;
                 text-align: center;
                 font-family: 'Merriweather', serif;
                 margin: 5px;
             }
             
             .step1__Text, .step2__Text, .step3__Text{
-                font-size: 13px;
+                font-size: 1rem;
                 font-family: 'Merriweather', serif;
             }
         }
 
         .step1__Img, .step2__Img, .step3__Img{
             height: auto;
-            width: 90%;
+            width: 40%;
         }
 
         .step1__Img, .step3__Img{
@@ -101,9 +101,5 @@
             justify-self: center;
             box-shadow: 6.2px 12.5px 12.5px #0000004f;
         }
-    }
-   
-   .step2, .step3{
-       display:none
     }
 }

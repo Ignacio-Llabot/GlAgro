@@ -8,14 +8,14 @@
     .logo{
         padding-top: 10%;
         padding-bottom: 10%;
-        margin-bottom: -30%;
+        margin-bottom: -20%;
         background-repeat: no-repeat;
         background-image: url(../images/Graupera-Home-07.jpg);
         background-size: 100%;
 
         img{
             margin: 7% auto 20% auto;
-            width: 70%;
+            width: 60%;
             padding: 20px 30px 20px 30px;
             display: block;
             background-color:rgba(156, 152, 148, 0.753);
@@ -26,13 +26,14 @@
     .mainArticle{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 6rem;
         align-content: center;
 
         .mainArticle__Bloque1, .mainArticle__Bloque2{
+            background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
+            box-shadow: 6.2px 12.5px 12.5px #0000004f;
             display: flex;
-            flex-direction: column;
-            background-color: transparent;
+            flex-direction: row;
             align-items: center;
             padding: 5%;
 
@@ -42,20 +43,18 @@
                 gap: 15px;
 
                 .mainArticle__Titulo1, .mainArticle__Titulo2{
-                    font-size: 19px;
-                    background-color: rgba(145, 143, 143, 0.925);
+                    font-size: 1.5rem;
                     border-radius: 10px;
-                    text-align: center;
+                    text-align: left;
                     text-decoration-line: underline;
                     margin-top: 0px;
                     margin-bottom: 0px;
                     margin-right: 20%;
-                    margin-left: 20%;
+                    margin-left: 0;
                 }
 
                 .mainArticle__Texto1, .mainArticle__Texto2{
-                    font-size: 12px;
-                    background-color: rgba(145, 143, 143, 0.925);
+                    font-size: 1.3rem;
                     margin-left: auto;
                     margin-right: auto;
                     padding: 5px;
@@ -67,24 +66,6 @@
                     }
                 }
             }
-
-            .mainArticle__Img1, .mainArticle__Img2{
-                display: none;
-            }
-        }
-
-        .mainArticle__Bloque1{
-            background-image: url(../images/img01.jpg);
-            background-size: 110% 100%;
-            background-repeat: no-repeat;
-            padding-bottom: 0px;
-        }
-
-        .mainArticle__Bloque2{
-            background-image: url(../images/Graupera-Home-05.jpg);
-            background-size: 110% 100%;
-            background-repeat: no-repeat;
-            padding-bottom: 0px;
         }
     }
 
@@ -101,9 +82,10 @@
         }
     
         .clients__Imgs{
-            display: grid;
-            grid-template: 1fr 1fr / 1fr 1fr;
-            padding: 10px 10px 10px 10px;
+            background: radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%);
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-around;
             border-radius: 20px;
             height: 300px;
             gap: 1rem;
@@ -113,9 +95,9 @@
             img{
                 justify-self: center;
                 align-self: center;
-                width: 100%;
+                width: 20%;
                 height: auto;
-                box-shadow: 6.2px 12.5px 12.5px #0000004f;
+                box-shadow: 4.0px 8.0px 8.0px #00000061;
                 background-color: white;
                 border-radius: 10px;
             }   
@@ -123,9 +105,8 @@
     
         .clients__Comments{
             display: flex;
-            gap: 2rem;
+            gap: 3rem;
             justify-content: space-around;
-            flex-direction: column;
             padding: 20px 30px 20px 30px;
     
             .clients__Comment1, .clients__Comment2{
@@ -136,7 +117,7 @@
     
                 .clients__Cite1, .clients__Name1, .clients__Cite2, .clients__Name2{
                     font-family: 'Merriweather', serif;
-                    font-size: 14px;
+                    font-size: 1rem;
                 }
             }
         }
