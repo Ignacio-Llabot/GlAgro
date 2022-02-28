@@ -232,8 +232,8 @@ body {
   height: 300px;
   gap: 1rem;
   background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
+          box-shadow: 6.2px 12.5px 12.5px #0000004f;
 }
 
 .index .clients .clients__Imgs img {
@@ -268,9 +268,13 @@ body {
   padding: 30px 30px 30px 30px;
 }
 
-.index .clients .clients__Comments .clients__Comment1 .clients__Cite1, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Cite2, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite1, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Cite2, .index .clients .clients__Comments .clients__Comment2 .clients__Name2 {
+.index .clients .clients__Comments .clients__Comment1 .clients__Cite1, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment1 .clients__Cite2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite1, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite2 {
   font-family: 'Merriweather', serif;
   font-size: 1rem;
+}
+
+.index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Name2 {
+  font-weight: bold;
 }
 
 .trabajo {
@@ -283,7 +287,7 @@ body {
   margin-bottom: 10%;
 }
 
-.trabajo .trabajoTitle {
+.trabajo .trabajoTitle, .trabajo .equipo .equipoTitle, .equipo .trabajo .equipoTitle, .trabajo .areas .areasTitle, .areas .trabajo .areasTitle, .trabajo .contacto .contactoTitle, .contacto .trabajo .contactoTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,21 +394,8 @@ body {
 }
 
 .trabajo .step1 .step1__Img, .trabajo .step1 .step2__Img, .trabajo .step1 .step3__Img, .trabajo .step2 .step1__Img, .trabajo .step2 .step2__Img, .trabajo .step2 .step3__Img, .trabajo .step3 .step1__Img, .trabajo .step3 .step2__Img, .trabajo .step3 .step3__Img {
-  height: auto;
   width: 40%;
-}
-
-.trabajo .step1 .step1__Img, .trabajo .step1 .step3__Img, .trabajo .step2 .step1__Img, .trabajo .step2 .step3__Img, .trabajo .step3 .step1__Img, .trabajo .step3 .step3__Img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
-          box-shadow: 6.2px 12.5px 12.5px #0000004f;
-}
-
-.trabajo .step1 .step2__Img, .trabajo .step2 .step2__Img, .trabajo .step3 .step2__Img {
+  height: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -421,16 +412,6 @@ body {
       grid-template-rows: auto, auto, auto;
   gap: 6rem;
   margin-bottom: 5%;
-}
-
-.equipo .equipoTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 2rem;
 }
 
 .equipo .profile1, .equipo .profile2 {
@@ -471,8 +452,8 @@ body {
 
 .equipo .profile1 .profile1__Div .profile1__Name, .equipo .profile1 .profile1__Div .profile2__Name, .equipo .profile1 .profile2__Div .profile1__Name, .equipo .profile1 .profile2__Div .profile2__Name, .equipo .profile2 .profile1__Div .profile1__Name, .equipo .profile2 .profile1__Div .profile2__Name, .equipo .profile2 .profile2__Div .profile1__Name, .equipo .profile2 .profile2__Div .profile2__Name {
   font-size: 1.5rem;
-  margin-bottom: 1px;
   text-align: center;
+  margin-bottom: 1px;
 }
 
 .equipo .profile1 .profile1__Div .profile1__Desc, .equipo .profile1 .profile1__Div .profile2__Desc, .equipo .profile1 .profile2__Div .profile1__Desc, .equipo .profile1 .profile2__Div .profile2__Desc, .equipo .profile2 .profile1__Div .profile1__Desc, .equipo .profile2 .profile1__Div .profile2__Desc, .equipo .profile2 .profile2__Div .profile1__Desc, .equipo .profile2 .profile2__Div .profile2__Desc {
@@ -489,36 +470,31 @@ body {
 .areas {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
+  -ms-grid-rows: auto 150px auto;
+      grid-template-rows: auto 150px auto;
   gap: 6rem;
   margin-top: 5%;
   margin-bottom: 5%;
   justify-items: center;
 }
 
-.areas .areasTitle {
-  font-size: 2rem;
-  text-align: center;
-}
-
 .areas .areasButtons {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto;
-  -ms-grid-columns: auto auto auto;
-      grid-template: auto auto / auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 1rem;
   margin: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 150%;
+  height: 60%;
 }
 
 .areas .areasButtons button {
-  width: 100%;
-  height: 120%;
+  width: 90px;
+  height: 100%;
   border-radius: 10px;
   -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
           box-shadow: 6.2px 12.5px 12.5px #0000004f;
@@ -563,14 +539,6 @@ body {
   margin-bottom: 5%;
 }
 
-.contacto .contactoTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  font-size: 2rem;
-}
-
 .contacto .contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,15 +555,15 @@ body {
 
 .contacto .contactInfo .whatsapp, .contacto .contactInfo .phone, .contacto .contactInfo .mail {
   padding: 3%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: auto;
   background: radial-gradient(circle, #b3be13 0%, #5ba10c 100%);
   padding: 15px 15px 15px 15px;
   border-radius: 20px;
   -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
           box-shadow: 6.2px 12.5px 12.5px #0000004f;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .contacto .contactInfo .whatsapp .whatsapp__Img, .contacto .contactInfo .whatsapp .phone__Img, .contacto .contactInfo .whatsapp .mail__Img, .contacto .contactInfo .phone .whatsapp__Img, .contacto .contactInfo .phone .phone__Img, .contacto .contactInfo .phone .mail__Img, .contacto .contactInfo .mail .whatsapp__Img, .contacto .contactInfo .mail .phone__Img, .contacto .contactInfo .mail .mail__Img {
@@ -704,7 +672,7 @@ body {
   height: auto;
 }
 
-.contacto .mapInfo .mapouter {
+.contacto .mapInfo .mapouter, .contacto .mapInfo .mapouter iframe {
   position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -716,14 +684,8 @@ body {
 }
 
 .contacto .mapInfo .mapouter iframe {
-  position: relative;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .contactForm {
@@ -972,7 +934,7 @@ body {
   .index .clients .clients__Comments {
     gap: 2rem;
   }
-  .index .clients .clients__Comments .clients__Comment1 .clients__Cite1, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Cite2, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite1, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Cite2, .index .clients .clients__Comments .clients__Comment2 .clients__Name2 {
+  .index .clients .clients__Comments .clients__Comment1 .clients__Cite1, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Cite2, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite1, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Cite2, .index .clients .clients__Comments .clients__Comment2 .clients__Name2 {
     font-size: 16px;
   }
   /*TRABAJO*/
@@ -1074,7 +1036,7 @@ body {
   .contacto .mapInfo .mapInfo__Div .adress .adress__Text, .contacto .mapInfo .mapInfo__Div .adress .location__Text, .contacto .mapInfo .mapInfo__Div .location .adress__Text, .contacto .mapInfo .mapInfo__Div .location .location__Text {
     font-size: 16px;
   }
-  .contacto .mapInfo .mapouter {
+  .contacto .mapInfo .mapouter, .contacto .mapInfo .mapouter iframe {
     width: 100%;
     height: 80%;
   }
@@ -1117,7 +1079,14 @@ body {
   .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Texto1, .index .mainArticle .mainArticle__Bloque1 .mainArticle__Div .mainArticle__Texto2, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Texto1, .index .mainArticle .mainArticle__Bloque2 .mainArticle__Div .mainArticle__Texto2 {
     font-size: 12px;
   }
-  .index .clients .clients__Comments .clients__Comment1 .clients__Cite1, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Cite2, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite1, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Cite2, .index .clients .clients__Comments .clients__Comment2 .clients__Name2 {
+  .index .clients .clients__Title {
+    font-size: 22px;
+  }
+  .index .clients .clients__Imgs {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .index .clients .clients__Comments .clients__Comment1 .clients__Cite1, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment1 .clients__Name1, .index .clients .clients__Comments .clients__Comment1 .clients__Cite2, .index .clients .clients__Comments .clients__Comment1 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Cite1, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Name2, .index .clients .clients__Comments .clients__Comment2 .clients__Name1, .index .clients .clients__Comments .clients__Comment2 .clients__Cite2, .index .clients .clients__Comments .clients__Comment2 .clients__Name2 {
     font-size: 14px;
   }
   /*TRABAJO*/
@@ -1130,7 +1099,7 @@ body {
     margin-top: 5%;
     margin-bottom: 10%;
   }
-  .trabajo .trabajoTitle {
+  .trabajo .trabajoTitle, .trabajo .equipo .equipoTitle, .equipo .trabajo .equipoTitle, .trabajo .areas .areasTitle, .areas .trabajo .areasTitle, .trabajo .contacto .contactoTitle, .contacto .trabajo .contactoTitle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

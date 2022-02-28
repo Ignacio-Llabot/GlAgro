@@ -18,18 +18,17 @@
             .menu-btn__burger {
                 display: block;
                 margin-right: 20px;
-                width: 40px;
-                height: 6px;
-                background:black;
+                @include tamaños(40px, 6px);
+                background: black;
                 border-radius: 5px;
                 box-shadow: 0 2px 5px rgba(255,101,47,.2);
                 transition: all .5s ease-in-out;
             }
+            
             .menu-btn__burger::before, .menu-btn__burger::after {
               content: '';
               position: absolute;
-              width: 40px;
-              height: 6px;
+              @include tamaños(40px, 6px);
               background:black;
               border-radius: 5px;
               transition: all .5s ease-in-out;
@@ -183,8 +182,7 @@
             display: grid;
             grid-template-columns: none;
             grid-template-rows: auto auto;
-            width: 90%;
-            height:110%;
+            @include tamaños(90%, 110%);
 
             .step1__Img, .step2__Img, .step3__Img{
                 width: 90%;
@@ -279,8 +277,7 @@
             }
     
             .mapouter{
-                width:100%;
-                height:80%;
+                @include tamaños(100%, 80%)
             }
         }
     }
@@ -306,8 +303,7 @@
                 }
     
                 textarea{
-                    width: 90%;
-                    height: 150px;
+                    @include tamaños(90%, 150px);
                     font-size: 16px;
                     margin-bottom: 0;
                 }
@@ -346,6 +342,13 @@
         }
     
         .clients{
+            .clients__Title{
+                font-size: map-get($title, mobile);
+            }
+
+            .clients__Imgs{
+                box-shadow: none;
+            }
             .clients__Comments{
                 .clients__Comment1, .clients__Comment2{
                     .clients__Cite1, .clients__Name1, .clients__Cite2, .clients__Name2{
@@ -368,7 +371,7 @@
         .trabajoTitle{
             display: flex;
             justify-content: center;
-            font-size: 22px;
+            font-size: map-get($title, mobile);
         }
     
         .steps{
@@ -400,7 +403,7 @@
 
     .equipo{
         .equipoTitle{
-            font-size: 22px;
+            font-size: map-get($title, mobile);
         }
     
         .profile1, .profile2{
@@ -424,7 +427,7 @@
 
     .areas{
         .areasTitle{
-            font-size: 22px;
+            font-size: map-get($title, mobile);
         }
     
         .areasText{
@@ -442,7 +445,7 @@
 
     .contacto{
         .contactoTitle{
-            font-size: 22px;
+            font-size: map-get($title, mobile);
         }
         .contactInfo{
             .whatsapp, .phone, .mail{
@@ -467,7 +470,7 @@
     
     .contactForm{
         h3{
-            font-size: 22px;
+            font-size: map-get($title, mobile);
         }
     
         form{

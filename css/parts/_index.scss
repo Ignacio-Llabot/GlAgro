@@ -1,4 +1,4 @@
-
+@import "./_variables";
 
 .index{
     display: grid;
@@ -30,8 +30,8 @@
         align-content: center;
 
         .mainArticle__Bloque1, .mainArticle__Bloque2{
-            background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
-            box-shadow: 6.2px 12.5px 12.5px #0000004f;
+            background: map-get($grad, green1);
+            box-shadow: $sombra;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -82,7 +82,7 @@
         }
     
         .clients__Imgs{
-            background: radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%);
+            background: map-get($grad,yellow);
             display: flex;
             flex-direction: row; 
             justify-content: space-around;
@@ -90,7 +90,7 @@
             height: 300px;
             gap: 1rem;
             background-color: transparent;
-            box-shadow: none;
+            box-shadow: $sombra;
     
             img{
                 justify-self: center;
@@ -110,14 +110,19 @@
             padding: 20px 30px 20px 30px;
     
             .clients__Comment1, .clients__Comment2{
-                background: radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%);
-                box-shadow: 6.2px 12.5px 12.5px #0000004f;
+                background: map-get($grad, yellow);
+                box-shadow: $sombra;
                 border-radius: 20px;
                 padding: 30px 30px 30px 30px;
     
-                .clients__Cite1, .clients__Name1, .clients__Cite2, .clients__Name2{
+                .clients__Cite1, .clients__Cite2{
                     font-family: 'Merriweather', serif;
                     font-size: 1rem;
+                }
+
+                .clients__Name1, .clients__Name2{
+                    @extend .clients__Cite1;
+                    font-weight: bold;
                 }
             }
         }

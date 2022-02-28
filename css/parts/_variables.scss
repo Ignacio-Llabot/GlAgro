@@ -1,0 +1,17 @@
+$sombra: 6.2px 12.5px 12.5px #0000004f;
+
+$grad:(
+    green1: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%),
+    green2: linear-gradient(90deg, rgba(204,215,27,1) 0%, rgba(115,147,0,1) 100%),
+    yellow: radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%),
+);
+
+$title: (
+    desktop: 2rem,
+    mobile: 22px,
+);
+
+@mixin tamaños($width, $height) {
+    width: $width;
+    height: $height;
+}

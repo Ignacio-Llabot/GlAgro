@@ -1,3 +1,4 @@
+@import "./_variables";
 
 .contacto{
     display: grid;
@@ -8,9 +9,7 @@
     margin-bottom: 5%;
 
     .contactoTitle{
-        display: flex;
-        text-align: center;
-        font-size: 2rem;
+        @extend .trabajoTitle
     }
 
     .contactInfo{
@@ -22,12 +21,11 @@
 
         .whatsapp, .phone, .mail{
             padding: 3%;
-            height: auto;
-            background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
+            @include tamaños(fit-content, auto);
+            background: map-get($grad, green1);
             padding: 15px 15px 15px 15px;
             border-radius: 20px;
-            box-shadow: 6.2px 12.5px 12.5px #0000004f;
-            width: fit-content;
+            box-shadow: $sombra;
 
             .whatsapp__Img, .phone__Img, .mail__Img{
                 max-width: 150px;
@@ -47,31 +45,29 @@
             display: flex;
             flex-direction: row;
             width: fit-content;
-            background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
+            background: map-get($grad, green1);
             padding: 15px 75px 15px 15px;
             border-radius: 20px;
-            box-shadow: 6.2px 12.5px 12.5px #0000004f;
+            box-shadow: $sombra;
         }
     }
 
     .mapInfo{
-        background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
+        background: map-get($grad, green1);
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-direction: row;
-        width: 83vw;
-        height: 550px;
+        @include tamaños(83vw, 550px);
         justify-content: space-around;
         border-radius: 20px;
-        box-shadow: 6.2px 12.5px 12.5px #0000004f;
+        box-shadow: $sombra;
 
         .mapInfo__Div{
             display: flex;
             flex-direction: column;
             gap: 6rem;
-            width: fit-content;
-            height: fit-content;
+            @include tamaños(fit-content, fit-content);
             align-self: center;
 
             .adress, .location{
@@ -89,8 +85,7 @@
 
                 .adress__Img, .location__Img{
                     align-self: center;
-                    width: 5rem;
-                    height: auto
+                    @include tamaños(5rem, auto)
                 }
             }
         }
@@ -98,16 +93,12 @@
         .mapouter{
             position: relative;
             align-self: center;
-            width:50%;
-            height:70%;
+            @include tamaños(50%, 70%);
             object-fit:cover;
 
             iframe{
-                position: relative;
-                align-self: center;
-                width:100%;
-                height:100%;
-                object-fit:cover;
+                @extend .mapouter;
+                @include tamaños(100%, 100%)
             }
         }
     }
@@ -128,10 +119,10 @@
         display: flex;
         flex-direction: column;
         padding-top: 30px;
-        background: radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%);
+        background: map-get($grad, green1);
         border-radius: 20px;
         padding-left: 0px;
-        box-shadow: 6.2px 12.5px 12.5px #0000004f;
+        box-shadow: $sombra;
 
         p{
             display: flex;
@@ -145,14 +136,12 @@
             }
 
             input{
-                width: 90%;
-                height: 40px;
+                @include tamaños(90%, 40px);
                 font-size: 20px;
             }
 
             textarea{
-                width: 100%;
-                height: 300px;
+                @include tamaños(100%, 300px);
                 font-size: 20px;
                 margin-bottom: 40px;
             }
