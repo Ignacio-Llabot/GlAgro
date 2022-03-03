@@ -68,7 +68,7 @@
             min-height: 100vh;
             display: block;
             z-index: 98;
-            background-color: #b7d891d0;
+            background-color: rgba(255, 255, 255, 0.616);
             padding-top: 120px;
             transition: 0.4s;
 
@@ -149,6 +149,7 @@
                 grid-template: 1fr 1fr / 1fr 1fr;
                 padding: 10px 10px 10px 10px;
                 height: fit-content;
+                box-shadow: none;
                 img{
                     width: 100%;
                     box-shadow: 6.2px 12.5px 12.5px #0000004f;

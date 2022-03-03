@@ -19,9 +19,7 @@ html {
 }
 
 body {
-  background-color: #97e971;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfe971), to(#FFFB7D));
-  background-image: linear-gradient(0deg, #cfe971 0%, #FFFB7D 100%);
+  background-color: lightgray;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -29,8 +27,8 @@ body {
 }
 
 .navBar {
-  background: #d5f5d2;
-  background: radial-gradient(circle, #b3be13 0%, #5ba10c 100%);
+  background: white;
+  border: #333;
 }
 
 .navBar .mobileNav {
@@ -68,8 +66,8 @@ body {
 }
 
 .navBar .navBar__Buttons .navBar__Buttons1 {
-  background-image: -webkit-gradient(linear, left top, right top, from(#ccd71b), to(#739300));
-  background-image: linear-gradient(90deg, #ccd71b 0%, #739300 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(9%, #dae80e), color-stop(96%, #5ba10c));
+  background: linear-gradient(90deg, #dae80e 9%, #5ba10c 96%);
 }
 
 .navBar .navBar__Buttons .navBar__Buttons1 {
@@ -549,7 +547,7 @@ body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 95% !important;
+  width: 85% !important;
   gap: 0;
 }
 
@@ -851,7 +849,7 @@ body {
     min-height: 100vh;
     display: block;
     z-index: 98;
-    background-color: #b7d891d0;
+    background-color: rgba(255, 255, 255, 0.616);
     padding-top: 120px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -925,6 +923,8 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .index .clients .clients__Imgs img {
     width: 100%;
