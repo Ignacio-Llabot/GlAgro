@@ -482,8 +482,6 @@ body {
   display: flex;
   gap: 1rem;
   margin: 0;
-  -ms-flex-item-align: center;
-      align-self: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -970,6 +968,8 @@ body {
   /*AREAS*/
   .areas {
     gap: 3rem;
+    -ms-grid-rows: auto 200px auto;
+        grid-template-rows: auto 200px auto;
   }
   .areas .areasText {
     height: 60vh;
@@ -983,6 +983,13 @@ body {
   }
   .areas .areasText p {
     font-size: 1rem;
+  }
+  .areas .areasButtons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template: auto auto / auto auto auto;
   }
   /*CONTACTO*/
   .contacto {

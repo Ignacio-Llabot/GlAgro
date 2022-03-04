@@ -16,7 +16,6 @@
         display: flex;
         gap: 1rem;
         margin: 0;
-        align-self: center;
         @include tamaños(fit-content, 60%);
 
         button{
