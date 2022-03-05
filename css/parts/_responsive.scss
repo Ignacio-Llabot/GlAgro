@@ -6,58 +6,57 @@
 
 
     .navBar{
-        .menu-btn{
+        .menu-btn {
             position: relative;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
+            margin-left: auto;
             align-items: center;
+            @include tamaños(80px, 80px);
             cursor: pointer;
             transition: all .5s ease-in-out;
             z-index: 99;
-        
+          }
             .menu-btn__burger {
-                display: block;
-                margin-right: 20px;
-                @include tamaños(40px, 6px);
+                @include tamaños(50px, 6px);
                 background: black;
                 border-radius: 5px;
                 box-shadow: 0 2px 5px rgba(255,101,47,.2);
                 transition: all .5s ease-in-out;
-            }
-            
-            .menu-btn__burger::before, .menu-btn__burger::after {
-              content: '';
-              position: absolute;
-              @include tamaños(40px, 6px);
-              background:black;
-              border-radius: 5px;
-              transition: all .5s ease-in-out;
-            }
-            .menu-btn__burger::before {
-              transform: translateY(-16px);
-            }
+          }
+            .menu-btn__burger::before,
             .menu-btn__burger::after {
-              transform: translateY(16px);
-            }
-        
+                content: '';
+                position: absolute;
+                @include tamaños(50px, 6px);
+                background: black;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(255,101,47,.2);
+                transition: all .5s ease-in-out;
+          }
+            .menu-btn__burger::before {
+                transform: translateY(-16px);
+          }
+            .menu-btn__burger::after {
+                transform: translateY(16px);
+          }
             .menu-btn.open .menu-btn__burger {
-              transform: translateX(-50px);
-              background: transparent;
-              box-shadow: none;
-            }
+                transform: translateX(-50px);
+                background: transparent;
+                box-shadow: none;
+          }
             .menu-btn.open .menu-btn__burger::before {
-              transform: rotate(45deg) translate(35px, -35px);
-            }
+                transform: rotate(45deg) translate(35px, -35px);
+          }
             .menu-btn.open .menu-btn__burger::after {
-              transform: rotate(-45deg) translate(35px, 35px);
-            }
-        }
+                transform: rotate(-45deg) translate(35px, 35px);
+          }
 
         .navBar__Title{
-          align-self: center;
+            align-self: center;
         }
         .navBar__Buttons{
-          display: none
+            display: none
         }
 
         .mobileNav {
@@ -342,6 +341,21 @@
 }
 
 @include mobile {
+
+    .navBar{
+        .menu-btn {
+            @include tamaños(60px, 40px);
+            align-self: center;
+        }
+        
+        .menu-btn__burger {
+            @include tamaños(30px, 5px);
+        }
+        .menu-btn__burger::before,
+        .menu-btn__burger::after {
+            @include tamaños(30px, 5px);
+        }
+    }
 
 
     /*INDEX*/
