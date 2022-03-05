@@ -46,6 +46,11 @@
         }
     }
 
+    .stepsMob{
+        @extend .steps;
+        display: none;
+    }
+
     .step1, .step2, .step3{
        background: map-get($grad, green1);
        display: flex;

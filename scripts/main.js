@@ -57,3 +57,37 @@ function area6(){
 	document.getElementById('changingTxt')
 	.innerHTML="jaja area 6";
 }
+
+function step1(){
+	document.getElementById('titulo1')
+	.innerHTML="tit 1";
+	document.getElementById('sub1')
+	.innerHTML="sub 1";
+	document.getElementById('txt1')
+	.innerHTML="txt 1";
+	document.getElementById('img1')
+	.src="../images/Graupera-Home-05.jpg"
+	
+}
+
+function step2(){
+	document.getElementById('titulo1')
+	.innerHTML="tit 2";
+	document.getElementById('sub1')
+	.innerHTML="sub 2";
+	document.getElementById('txt1')
+	.innerHTML="txt 2";
+	document.getElementById('img1')
+	.src="../images/Graupera-Home-06.jpg"
+}
+
+function step3(){
+	document.getElementById('titulo1')
+	.innerHTML="tit 3";
+	document.getElementById('sub1')
+	.innerHTML="sub 3";
+	document.getElementById('txt1')
+	.innerHTML="txt 3";
+	document.getElementById('img1')
+	.src="../images/Graupera-Home-07.jpg"
+}

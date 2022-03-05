@@ -178,6 +178,19 @@
                 }
             }
         }
+
+        .steps{
+            display: none;
+        }
+
+        .stepsMob{
+            display: flex;
+
+            button{
+                border: none;
+                background-color: transparent;
+            }
+        }
     
         .step1, .step2, .step3{
             display: grid;
