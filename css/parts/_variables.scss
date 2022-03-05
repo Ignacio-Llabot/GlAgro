@@ -15,3 +15,11 @@ $title: (
     width: $width;
     height: $height;
 }
+
+@mixin tablet {
+    @media screen and (max-width: 992px) { @content }
+};
+
+@mixin mobile {
+    @media screen and (max-width: 426px) { @content }
+}

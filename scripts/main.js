@@ -27,3 +27,33 @@ window.onload = function () {
 		mobile_menu.classList.toggle('is-active');
 	});
 }
+
+function area1(){
+	document.getElementById('changingTxt')
+	.innerHTML="jaja area 1";
+}
+
+function area2(){
+	document.getElementById('changingTxt')
+	.innerHTML="jaja area 2";
+}
+
+function area3(){
+	document.getElementById('changingTxt')
+	.innerHTML="jaja area 3";
+}
+
+function area4(){
+	document.getElementById('changingTxt')
+	.innerHTML="jaja area 4";
+}
+
+function area5(){
+	document.getElementById('changingTxt')
+	.innerHTML="jaja area 5";
+}
+
+function area6(){
+	document.getElementById('changingTxt')
+	.innerHTML="jaja area 6";
+}
