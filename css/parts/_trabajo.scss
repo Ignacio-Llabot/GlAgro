@@ -13,6 +13,12 @@
         font-size: map-get($title, desktop);
     }
 
+    .trabajoSubTitle{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem
+    }
+
     .steps{
         justify-content: center;
         a{
@@ -105,6 +111,16 @@
             .step1__Text, .step2__Text, .step3__Text{
                 font-size: 1.1rem;
                 font-family: 'Merriweather', serif;
+
+                ul{
+                    li{
+                        p{
+                            font-size: 1.1rem;
+                            font-family: 'Merriweather', serif;
+                            list-style-type: square;
+                        }
+                    }
+                }
             }
         }
 

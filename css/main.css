@@ -300,6 +300,16 @@ body {
   font-size: 2rem;
 }
 
+.trabajo .trabajoSubTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+}
+
 .trabajo .steps, .trabajo .stepsMob {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -426,6 +436,12 @@ body {
 .trabajo .step1 .step1__Div .step1__Text, .trabajo .step1 .step1__Div .step2__Text, .trabajo .step1 .step1__Div .step3__Text, .trabajo .step1 .step2__Div .step1__Text, .trabajo .step1 .step2__Div .step2__Text, .trabajo .step1 .step2__Div .step3__Text, .trabajo .step1 .step3__Div .step1__Text, .trabajo .step1 .step3__Div .step2__Text, .trabajo .step1 .step3__Div .step3__Text, .trabajo .step2 .step1__Div .step1__Text, .trabajo .step2 .step1__Div .step2__Text, .trabajo .step2 .step1__Div .step3__Text, .trabajo .step2 .step2__Div .step1__Text, .trabajo .step2 .step2__Div .step2__Text, .trabajo .step2 .step2__Div .step3__Text, .trabajo .step2 .step3__Div .step1__Text, .trabajo .step2 .step3__Div .step2__Text, .trabajo .step2 .step3__Div .step3__Text, .trabajo .step3 .step1__Div .step1__Text, .trabajo .step3 .step1__Div .step2__Text, .trabajo .step3 .step1__Div .step3__Text, .trabajo .step3 .step2__Div .step1__Text, .trabajo .step3 .step2__Div .step2__Text, .trabajo .step3 .step2__Div .step3__Text, .trabajo .step3 .step3__Div .step1__Text, .trabajo .step3 .step3__Div .step2__Text, .trabajo .step3 .step3__Div .step3__Text {
   font-size: 1.1rem;
   font-family: 'Merriweather', serif;
+}
+
+.trabajo .step1 .step1__Div .step1__Text ul li p, .trabajo .step1 .step1__Div .step2__Text ul li p, .trabajo .step1 .step1__Div .step3__Text ul li p, .trabajo .step1 .step2__Div .step1__Text ul li p, .trabajo .step1 .step2__Div .step2__Text ul li p, .trabajo .step1 .step2__Div .step3__Text ul li p, .trabajo .step1 .step3__Div .step1__Text ul li p, .trabajo .step1 .step3__Div .step2__Text ul li p, .trabajo .step1 .step3__Div .step3__Text ul li p, .trabajo .step2 .step1__Div .step1__Text ul li p, .trabajo .step2 .step1__Div .step2__Text ul li p, .trabajo .step2 .step1__Div .step3__Text ul li p, .trabajo .step2 .step2__Div .step1__Text ul li p, .trabajo .step2 .step2__Div .step2__Text ul li p, .trabajo .step2 .step2__Div .step3__Text ul li p, .trabajo .step2 .step3__Div .step1__Text ul li p, .trabajo .step2 .step3__Div .step2__Text ul li p, .trabajo .step2 .step3__Div .step3__Text ul li p, .trabajo .step3 .step1__Div .step1__Text ul li p, .trabajo .step3 .step1__Div .step2__Text ul li p, .trabajo .step3 .step1__Div .step3__Text ul li p, .trabajo .step3 .step2__Div .step1__Text ul li p, .trabajo .step3 .step2__Div .step2__Text ul li p, .trabajo .step3 .step2__Div .step3__Text ul li p, .trabajo .step3 .step3__Div .step1__Text ul li p, .trabajo .step3 .step3__Div .step2__Text ul li p, .trabajo .step3 .step3__Div .step3__Text ul li p {
+  font-size: 1.1rem;
+  font-family: 'Merriweather', serif;
+  list-style-type: square;
 }
 
 .trabajo .step1 .step1__Img, .trabajo .step1 .step2__Img, .trabajo .step1 .step3__Img, .trabajo .step2 .step1__Img, .trabajo .step2 .step2__Img, .trabajo .step2 .step3__Img, .trabajo .step3 .step1__Img, .trabajo .step3 .step2__Img, .trabajo .step3 .step3__Img {
@@ -1001,6 +1017,9 @@ body {
   .trabajo .steps .steps__Step1 .steps__Title1, .trabajo .stepsMob .steps__Step1 .steps__Title1, .trabajo .steps .steps__Step1 .steps__Title2, .trabajo .stepsMob .steps__Step1 .steps__Title2, .trabajo .steps .steps__Step1 .steps__Title3, .trabajo .stepsMob .steps__Step1 .steps__Title3, .trabajo .steps .steps__Step2 .steps__Title1, .trabajo .stepsMob .steps__Step2 .steps__Title1, .trabajo .steps .steps__Step2 .steps__Title2, .trabajo .stepsMob .steps__Step2 .steps__Title2, .trabajo .steps .steps__Step2 .steps__Title3, .trabajo .stepsMob .steps__Step2 .steps__Title3, .trabajo .steps .steps__Step3 .steps__Title1, .trabajo .stepsMob .steps__Step3 .steps__Title1, .trabajo .steps .steps__Step3 .steps__Title2, .trabajo .stepsMob .steps__Step3 .steps__Title2, .trabajo .steps .steps__Step3 .steps__Title3, .trabajo .stepsMob .steps__Step3 .steps__Title3 {
     font-size: 18px;
   }
+  .trabajo .trabajoSubTitle {
+    font-size: 1.3rem;
+  }
   .trabajo .steps, .trabajo .stepsMob {
     display: none;
   }
@@ -1229,6 +1248,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 22px;
+  }
+  .trabajo .trabajoSubTitle {
+    font-size: 1.1rem;
   }
   .trabajo .steps .steps__Step1 .steps__Title1, .trabajo .stepsMob .steps__Step1 .steps__Title1, .trabajo .steps .steps__Step1 .steps__Title2, .trabajo .stepsMob .steps__Step1 .steps__Title2, .trabajo .steps .steps__Step1 .steps__Title3, .trabajo .stepsMob .steps__Step1 .steps__Title3, .trabajo .steps .steps__Step2 .steps__Title1, .trabajo .stepsMob .steps__Step2 .steps__Title1, .trabajo .steps .steps__Step2 .steps__Title2, .trabajo .stepsMob .steps__Step2 .steps__Title2, .trabajo .steps .steps__Step2 .steps__Title3, .trabajo .stepsMob .steps__Step2 .steps__Title3, .trabajo .steps .steps__Step3 .steps__Title1, .trabajo .stepsMob .steps__Step3 .steps__Title1, .trabajo .steps .steps__Step3 .steps__Title2, .trabajo .stepsMob .steps__Step3 .steps__Title2, .trabajo .steps .steps__Step3 .steps__Title3, .trabajo .stepsMob .steps__Step3 .steps__Title3 {
     font-size: 12px;

@@ -189,6 +189,10 @@
             }
         }
 
+        .trabajoSubTitle{
+            font-size: 1.3rem
+        }
+
         .steps{
             display: none;
         }
@@ -440,6 +444,10 @@
             display: flex;
             justify-content: center;
             font-size: map-get($title, mobile);
+        }
+
+        .trabajoSubTitle{
+            font-size: 1.1rem
         }
     
         .steps{
