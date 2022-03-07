@@ -605,6 +605,16 @@ body {
   gap: 0;
 }
 
+@media screen and (max-width: 1342px) {
+  .contacto .contactInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 .contacto .contactInfo .whatsapp, .contacto .contactInfo .phone, .contacto .contactInfo .mail {
   padding: 3%;
   max-height: 106px;
@@ -617,6 +627,13 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
           box-shadow: 6.2px 12.5px 12.5px #0000004f;
+}
+
+@media screen and (max-width: 1342px) {
+  .contacto .contactInfo .whatsapp, .contacto .contactInfo .phone, .contacto .contactInfo .mail {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 .contacto .contactInfo .whatsapp .whatsapp__Img, .contacto .contactInfo .whatsapp .phone__Img, .contacto .contactInfo .whatsapp .mail__Img, .contacto .contactInfo .phone .whatsapp__Img, .contacto .contactInfo .phone .phone__Img, .contacto .contactInfo .phone .mail__Img, .contacto .contactInfo .mail .whatsapp__Img, .contacto .contactInfo .mail .phone__Img, .contacto .contactInfo .mail .mail__Img {
@@ -733,6 +750,13 @@ body {
   height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 1237px) {
+  .contacto .mapInfo .mapouter, .contacto .mapInfo .mapouter iframe {
+    width: 80%;
+    height: 30%;
+  }
 }
 
 .contacto .mapInfo .mapouter iframe {

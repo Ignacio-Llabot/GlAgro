@@ -19,6 +19,11 @@
         width: 85%!important;
         gap: 0;
 
+        @media screen and (max-width: 1342px) {
+            flex-direction: column;
+            gap: 2rem
+        }
+
         .whatsapp, .phone, .mail{
             padding: 3%;
             max-height: 106px;
@@ -27,6 +32,12 @@
             padding: 15px 15px 15px 15px;
             border-radius: 20px;
             box-shadow: $sombra;
+
+            @media screen and (max-width: 1342px) {
+                margin-left: auto!important;
+                margin-right: auto!important;
+            }
+    
 
             .whatsapp__Img, .phone__Img, .mail__Img{
                 max-width: 100px;
@@ -95,6 +106,10 @@
             align-self: center;
             @include tamaños(30%, 70%);
             object-fit:cover;
+
+            @media screen and (max-width:1237px) {
+                @include tamaños(80%, 30%);
+            }
 
             iframe{
                 @extend .mapouter;
