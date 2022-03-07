@@ -90,9 +90,6 @@ body {
 }
 
 .navBar .navBar__Buttons .navBar__Buttons1:hover {
-  background-position: right center;
-  color: black;
-  text-decoration: none;
   -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
           box-shadow: 6.2px 12.5px 12.5px #0000004f;
 }
@@ -304,6 +301,9 @@ body {
 .trabajo .steps a, .trabajo .stepsMob a {
   color: black;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .trabajo .steps a:visited, .trabajo .stepsMob a:visited {
@@ -326,11 +326,17 @@ body {
           align-items: center;
   -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
           box-shadow: 6.2px 12.5px 12.5px #0000004f;
-  padding: 15%;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 5%;
 }
 
 .trabajo .steps .steps__Step1 .steps__Img1, .trabajo .stepsMob .steps__Step1 .steps__Img1, .trabajo .steps .steps__Step1 .steps__Img2, .trabajo .stepsMob .steps__Step1 .steps__Img2, .trabajo .steps .steps__Step1 .steps__Img3, .trabajo .stepsMob .steps__Step1 .steps__Img3, .trabajo .steps .steps__Step2 .steps__Img1, .trabajo .stepsMob .steps__Step2 .steps__Img1, .trabajo .steps .steps__Step2 .steps__Img2, .trabajo .stepsMob .steps__Step2 .steps__Img2, .trabajo .steps .steps__Step2 .steps__Img3, .trabajo .stepsMob .steps__Step2 .steps__Img3, .trabajo .steps .steps__Step3 .steps__Img1, .trabajo .stepsMob .steps__Step3 .steps__Img1, .trabajo .steps .steps__Step3 .steps__Img2, .trabajo .stepsMob .steps__Step3 .steps__Img2, .trabajo .steps .steps__Step3 .steps__Img3, .trabajo .stepsMob .steps__Step3 .steps__Img3 {
-  width: 40%;
+  width: 30px;
   height: auto;
   margin-right: auto;
 }
@@ -341,6 +347,25 @@ body {
           margin-block-start: 0em;
   -webkit-margin-after: 0em;
           margin-block-end: 0em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1399px) {
+  .trabajo .steps .steps__Step1 .steps__Title1, .trabajo .stepsMob .steps__Step1 .steps__Title1, .trabajo .steps .steps__Step1 .steps__Title2, .trabajo .stepsMob .steps__Step1 .steps__Title2, .trabajo .steps .steps__Step1 .steps__Title3, .trabajo .stepsMob .steps__Step1 .steps__Title3, .trabajo .steps .steps__Step2 .steps__Title1, .trabajo .stepsMob .steps__Step2 .steps__Title1, .trabajo .steps .steps__Step2 .steps__Title2, .trabajo .stepsMob .steps__Step2 .steps__Title2, .trabajo .steps .steps__Step2 .steps__Title3, .trabajo .stepsMob .steps__Step2 .steps__Title3, .trabajo .steps .steps__Step3 .steps__Title1, .trabajo .stepsMob .steps__Step3 .steps__Title1, .trabajo .steps .steps__Step3 .steps__Title2, .trabajo .stepsMob .steps__Step3 .steps__Title2, .trabajo .steps .steps__Step3 .steps__Title3, .trabajo .stepsMob .steps__Step3 .steps__Title3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .trabajo .steps .steps__Step1 .steps__Title1, .trabajo .stepsMob .steps__Step1 .steps__Title1, .trabajo .steps .steps__Step1 .steps__Title2, .trabajo .stepsMob .steps__Step1 .steps__Title2, .trabajo .steps .steps__Step1 .steps__Title3, .trabajo .stepsMob .steps__Step1 .steps__Title3, .trabajo .steps .steps__Step2 .steps__Title1, .trabajo .stepsMob .steps__Step2 .steps__Title1, .trabajo .steps .steps__Step2 .steps__Title2, .trabajo .stepsMob .steps__Step2 .steps__Title2, .trabajo .steps .steps__Step2 .steps__Title3, .trabajo .stepsMob .steps__Step2 .steps__Title3, .trabajo .steps .steps__Step3 .steps__Title1, .trabajo .stepsMob .steps__Step3 .steps__Title1, .trabajo .steps .steps__Step3 .steps__Title2, .trabajo .stepsMob .steps__Step3 .steps__Title2, .trabajo .steps .steps__Step3 .steps__Title3, .trabajo .stepsMob .steps__Step3 .steps__Title3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .trabajo .steps .steps__Step3, .trabajo .stepsMob .steps__Step3 {
+    padding-left: 10%;
+  }
 }
 
 .trabajo .stepsMob {
@@ -378,20 +403,20 @@ body {
 }
 
 .trabajo .step1 .step1__Div .step1__Title, .trabajo .step1 .step1__Div .step2__Title, .trabajo .step1 .step1__Div .step3__Title, .trabajo .step1 .step2__Div .step1__Title, .trabajo .step1 .step2__Div .step2__Title, .trabajo .step1 .step2__Div .step3__Title, .trabajo .step1 .step3__Div .step1__Title, .trabajo .step1 .step3__Div .step2__Title, .trabajo .step1 .step3__Div .step3__Title, .trabajo .step2 .step1__Div .step1__Title, .trabajo .step2 .step1__Div .step2__Title, .trabajo .step2 .step1__Div .step3__Title, .trabajo .step2 .step2__Div .step1__Title, .trabajo .step2 .step2__Div .step2__Title, .trabajo .step2 .step2__Div .step3__Title, .trabajo .step2 .step3__Div .step1__Title, .trabajo .step2 .step3__Div .step2__Title, .trabajo .step2 .step3__Div .step3__Title, .trabajo .step3 .step1__Div .step1__Title, .trabajo .step3 .step1__Div .step2__Title, .trabajo .step3 .step1__Div .step3__Title, .trabajo .step3 .step2__Div .step1__Title, .trabajo .step3 .step2__Div .step2__Title, .trabajo .step3 .step2__Div .step3__Title, .trabajo .step3 .step3__Div .step1__Title, .trabajo .step3 .step3__Div .step2__Title, .trabajo .step3 .step3__Div .step3__Title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 10px;
 }
 
 .trabajo .step1 .step1__Div .step1__SubTitle, .trabajo .step1 .step1__Div .step2__SubTitle, .trabajo .step1 .step1__Div .step3__SubTitle, .trabajo .step1 .step2__Div .step1__SubTitle, .trabajo .step1 .step2__Div .step2__SubTitle, .trabajo .step1 .step2__Div .step3__SubTitle, .trabajo .step1 .step3__Div .step1__SubTitle, .trabajo .step1 .step3__Div .step2__SubTitle, .trabajo .step1 .step3__Div .step3__SubTitle, .trabajo .step2 .step1__Div .step1__SubTitle, .trabajo .step2 .step1__Div .step2__SubTitle, .trabajo .step2 .step1__Div .step3__SubTitle, .trabajo .step2 .step2__Div .step1__SubTitle, .trabajo .step2 .step2__Div .step2__SubTitle, .trabajo .step2 .step2__Div .step3__SubTitle, .trabajo .step2 .step3__Div .step1__SubTitle, .trabajo .step2 .step3__Div .step2__SubTitle, .trabajo .step2 .step3__Div .step3__SubTitle, .trabajo .step3 .step1__Div .step1__SubTitle, .trabajo .step3 .step1__Div .step2__SubTitle, .trabajo .step3 .step1__Div .step3__SubTitle, .trabajo .step3 .step2__Div .step1__SubTitle, .trabajo .step3 .step2__Div .step2__SubTitle, .trabajo .step3 .step2__Div .step3__SubTitle, .trabajo .step3 .step3__Div .step1__SubTitle, .trabajo .step3 .step3__Div .step2__SubTitle, .trabajo .step3 .step3__Div .step3__SubTitle {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: center;
   font-family: 'Merriweather', serif;
   margin: 5px;
 }
 
 .trabajo .step1 .step1__Div .step1__Text, .trabajo .step1 .step1__Div .step2__Text, .trabajo .step1 .step1__Div .step3__Text, .trabajo .step1 .step2__Div .step1__Text, .trabajo .step1 .step2__Div .step2__Text, .trabajo .step1 .step2__Div .step3__Text, .trabajo .step1 .step3__Div .step1__Text, .trabajo .step1 .step3__Div .step2__Text, .trabajo .step1 .step3__Div .step3__Text, .trabajo .step2 .step1__Div .step1__Text, .trabajo .step2 .step1__Div .step2__Text, .trabajo .step2 .step1__Div .step3__Text, .trabajo .step2 .step2__Div .step1__Text, .trabajo .step2 .step2__Div .step2__Text, .trabajo .step2 .step2__Div .step3__Text, .trabajo .step2 .step3__Div .step1__Text, .trabajo .step2 .step3__Div .step2__Text, .trabajo .step2 .step3__Div .step3__Text, .trabajo .step3 .step1__Div .step1__Text, .trabajo .step3 .step1__Div .step2__Text, .trabajo .step3 .step1__Div .step3__Text, .trabajo .step3 .step2__Div .step1__Text, .trabajo .step3 .step2__Div .step2__Text, .trabajo .step3 .step2__Div .step3__Text, .trabajo .step3 .step3__Div .step1__Text, .trabajo .step3 .step3__Div .step2__Text, .trabajo .step3 .step3__Div .step3__Text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Merriweather', serif;
 }
 
@@ -435,8 +460,8 @@ body {
   width: 45vw;
   height: auto;
   margin-bottom: 5%;
-  min-width: 165px;
-  min-height: 155px;
+  min-width: 250px;
+  min-height: 240px;
   max-width: 480px;
   max-width: 450px;
 }
@@ -467,6 +492,9 @@ body {
 .equipo .profile1 .profile1__Div .profile1__Text, .equipo .profile1 .profile1__Div .profile2__Text, .equipo .profile1 .profile2__Div .profile1__Text, .equipo .profile1 .profile2__Div .profile2__Text, .equipo .profile2 .profile1__Div .profile1__Text, .equipo .profile2 .profile1__Div .profile2__Text, .equipo .profile2 .profile2__Div .profile1__Text, .equipo .profile2 .profile2__Div .profile2__Text {
   font-size: 1.1rem;
   font-family: 'Merriweather', serif;
+  list-style-type: none;
+  line-height: 200%;
+  padding: 0;
 }
 
 .areas {
@@ -555,6 +583,7 @@ body {
 
 .contacto .contactInfo .whatsapp, .contacto .contactInfo .phone, .contacto .contactInfo .mail {
   padding: 3%;
+  max-height: 106px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -567,7 +596,7 @@ body {
 }
 
 .contacto .contactInfo .whatsapp .whatsapp__Img, .contacto .contactInfo .whatsapp .phone__Img, .contacto .contactInfo .whatsapp .mail__Img, .contacto .contactInfo .phone .whatsapp__Img, .contacto .contactInfo .phone .phone__Img, .contacto .contactInfo .phone .mail__Img, .contacto .contactInfo .mail .whatsapp__Img, .contacto .contactInfo .mail .phone__Img, .contacto .contactInfo .mail .mail__Img {
-  max-width: 150px;
+  max-width: 100px;
   height: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -581,6 +610,9 @@ body {
       align-self: center;
   margin-bottom: auto;
   margin-top: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .contacto .contactInfo .mail {
@@ -591,11 +623,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   background: radial-gradient(circle, #b3be13 0%, #5ba10c 100%);
-  padding: 15px 75px 15px 15px;
   border-radius: 20px;
   -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
           box-shadow: 6.2px 12.5px 12.5px #0000004f;
@@ -677,7 +705,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
+  width: 30%;
   height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -947,6 +975,9 @@ body {
   .trabajo {
     gap: 3rem;
   }
+  .trabajo .steps, .trabajo .stepsMob {
+    min-width: none;
+  }
   .trabajo .steps .steps__Step1 .steps__Title1, .trabajo .stepsMob .steps__Step1 .steps__Title1, .trabajo .steps .steps__Step1 .steps__Title2, .trabajo .stepsMob .steps__Step1 .steps__Title2, .trabajo .steps .steps__Step1 .steps__Title3, .trabajo .stepsMob .steps__Step1 .steps__Title3, .trabajo .steps .steps__Step2 .steps__Title1, .trabajo .stepsMob .steps__Step2 .steps__Title1, .trabajo .steps .steps__Step2 .steps__Title2, .trabajo .stepsMob .steps__Step2 .steps__Title2, .trabajo .steps .steps__Step2 .steps__Title3, .trabajo .stepsMob .steps__Step2 .steps__Title3, .trabajo .steps .steps__Step3 .steps__Title1, .trabajo .stepsMob .steps__Step3 .steps__Title1, .trabajo .steps .steps__Step3 .steps__Title2, .trabajo .stepsMob .steps__Step3 .steps__Title2, .trabajo .steps .steps__Step3 .steps__Title3, .trabajo .stepsMob .steps__Step3 .steps__Title3 {
     font-size: 18px;
   }
@@ -1031,21 +1062,31 @@ body {
     height: fit-content;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .contacto .contactInfo .whatsapp .whatsapp__Img, .contacto .contactInfo .whatsapp .phone__Img, .contacto .contactInfo .whatsapp .mail__Img, .contacto .contactInfo .phone .whatsapp__Img, .contacto .contactInfo .phone .phone__Img, .contacto .contactInfo .phone .mail__Img, .contacto .contactInfo .mail .whatsapp__Img, .contacto .contactInfo .mail .phone__Img, .contacto .contactInfo .mail .mail__Img {
-    width: 40%;
+    max-width: none;
+    width: 30%;
     max-height: 90%;
+  }
+  .contacto .contactInfo .whatsapp .mail__Img, .contacto .contactInfo .phone .mail__Img, .contacto .contactInfo .mail .mail__Img {
+    display: none !important;
   }
   .contacto .contactInfo .whatsapp .whatsapp__Number, .contacto .contactInfo .whatsapp .phone__Number, .contacto .contactInfo .whatsapp .mail__Mail, .contacto .contactInfo .phone .whatsapp__Number, .contacto .contactInfo .phone .phone__Number, .contacto .contactInfo .phone .mail__Mail, .contacto .contactInfo .mail .whatsapp__Number, .contacto .contactInfo .mail .phone__Number, .contacto .contactInfo .mail .mail__Mail {
     font-size: 16px;
   }
+  .contacto .contactInfo .mail {
+    min-height: 89px;
+  }
   .contacto .mapInfo {
-    height: 450px;
+    height: 600px;
     display: -ms-grid;
     display: grid;
     grid-auto-flow: column;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 0.7fr 1.3fr;
+        grid-template-rows: 0.7fr 1.3fr;
     justify-items: center;
   }
   .contacto .mapInfo .mapInfo__Div {
@@ -1060,12 +1101,18 @@ body {
     gap: 1rem;
     margin: 0;
   }
+  .contacto .mapInfo .mapInfo__Div .adress .adress__Img, .contacto .mapInfo .mapInfo__Div .adress .location__Img, .contacto .mapInfo .mapInfo__Div .location .adress__Img, .contacto .mapInfo .mapInfo__Div .location .location__Img {
+    width: 30%;
+    height: auto;
+    min-width: 58px;
+  }
   .contacto .mapInfo .mapInfo__Div .adress .adress__Text, .contacto .mapInfo .mapInfo__Div .adress .location__Text, .contacto .mapInfo .mapInfo__Div .location .adress__Text, .contacto .mapInfo .mapInfo__Div .location .location__Text {
     font-size: 16px;
+    margin: 0;
   }
   .contacto .mapInfo .mapouter, .contacto .mapInfo .mapouter iframe {
-    width: 100%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
   }
   .contactForm {
     margin: 0;

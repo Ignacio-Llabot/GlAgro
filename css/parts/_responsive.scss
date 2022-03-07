@@ -171,6 +171,7 @@
     .trabajo{
         gap: 3rem;
         .steps{
+            min-width: none;
             .steps__Step1, .steps__Step2, .steps__Step3{
                 .steps__Title1, .steps__Title2, .steps__Title3{
                     font-size: 18px;
@@ -261,23 +262,33 @@
                 height: fit-content;
                 padding: 15px 15px 15px 15px;
                 border-radius: 20px;
+                width: fit-content;
     
                 .whatsapp__Img, .phone__Img, .mail__Img{
-                    width: 40%;
+                    max-width: none;
+                    width: 30%;
                     max-height: 90%;
                 }
-    
+
+                .mail__Img{
+                    display: none!important;
+                }
+
                 .whatsapp__Number, .phone__Number, .mail__Mail{
                     font-size: 16px;
                 }
             }
+
+            .mail{
+                min-height: 89px;
+            }
         }
     
         .mapInfo{
-            height: 450px;
+            height: 600px;
             display: grid;
             grid-auto-flow: column;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 0.7fr 1.3fr;
             justify-items: center;
     
             .mapInfo__Div{
@@ -288,15 +299,21 @@
                 .adress, .location{
                     gap: 1rem;
                     margin: 0;
+
+                    .adress__Img, .location__Img{
+                        @include tamaños(30%, auto);
+                        min-width: 58px
+                    }
     
                     .adress__Text, .location__Text{
                         font-size: 16px;
+                        margin: 0;
                     }
                 }
             }
     
             .mapouter{
-                @include tamaños(100%, 80%)
+                @include tamaños(80%, 90%)
             }
         }
     }

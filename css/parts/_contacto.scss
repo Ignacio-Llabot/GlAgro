@@ -21,6 +21,7 @@
 
         .whatsapp, .phone, .mail{
             padding: 3%;
+            max-height: 106px;
             @include tamaños(fit-content, auto);
             background: map-get($grad, green1);
             padding: 15px 15px 15px 15px;
@@ -28,7 +29,7 @@
             box-shadow: $sombra;
 
             .whatsapp__Img, .phone__Img, .mail__Img{
-                max-width: 150px;
+                max-width: 100px;
                 height: auto;
                 align-self: center;
             }
@@ -38,15 +39,14 @@
                 align-self: center;
                 margin-bottom: auto;
                 margin-top: auto;
+                width: fit-content;
             }
         }
 
         .mail{
             display: flex;
             flex-direction: row;
-            width: fit-content;
             background: map-get($grad, green1);
-            padding: 15px 75px 15px 15px;
             border-radius: 20px;
             box-shadow: $sombra;
         }
@@ -93,7 +93,7 @@
         .mapouter{
             position: relative;
             align-self: center;
-            @include tamaños(50%, 70%);
+            @include tamaños(30%, 70%);
             object-fit:cover;
 
             iframe{

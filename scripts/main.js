@@ -72,22 +72,22 @@ function step1(){
 
 function step2(){
 	document.getElementById('titulo1')
-	.innerHTML="tit 2";
+	.innerHTML="Paso 2";
 	document.getElementById('sub1')
-	.innerHTML="sub 2";
+	.innerHTML="CRONOLOGIA DE ACCIONES.";
 	document.getElementById('txt1')
-	.innerHTML="txt 2";
+	.innerHTML="A partir de la información recabada se elabora un plan de trabajo conjunto Empresa-Estudio en cada una de las áreas de la empresa, confeccionando contratos, renegociando pasivos, reorganizando recursos humanos, entre otras acciones que dependerán del tipo de empresa y sus unidades de negocios. </br></br> La cronología de acciones y su ejecución dependerá del tipo de empresa. </br></br> Duración Paso 2 - entre 8 y 16 semanas según empresa";
 	document.getElementById('img1')
 	.src="../images/Graupera-Home-06.jpg"
 }
 
 function step3(){
 	document.getElementById('titulo1')
-	.innerHTML="tit 3";
+	.innerHTML="Paso 3";
 	document.getElementById('sub1')
-	.innerHTML="sub 3";
+	.innerHTML="MANTENIMIENTO.";
 	document.getElementById('txt1')
-	.innerHTML="txt 3";
+	.innerHTML="Luego de ejecutado el paso 2, con visitas en la sede de la empresa,  se realiza el mantenimiento y actualización de todas las áreas, logrando así la mejor performance y el crecimiento de tu empresa. </br></br> Por etapa 1 y 2, 100 $250.000 más IVA, la etapa 3 se pacta por separado según facturación y cantidad de personal. Contratando las 3 etapas se bonifica la 1 y 2. </br></br> A pactar por separado: demandas en sede judicial, asesoramiento contable.";
 	document.getElementById('img1')
 	.src="../images/Graupera-Home-07.jpg"
 }

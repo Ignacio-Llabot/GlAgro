@@ -20,8 +20,8 @@
             align-self: center;
             @include tamaños(45vw, auto);
             margin-bottom: 5%;
-            min-width: 165px;
-            min-height: 155px;
+            min-width: 250px;
+            min-height: 240px;
             max-width: 480px;
             max-width: 450px;
         }
@@ -50,6 +50,9 @@
             .profile1__Text, .profile2__Text{
                 font-size: 1.1rem;
                 font-family: 'Merriweather', serif;
+                list-style-type: none;
+                line-height: 200%;
+                padding: 0;
             }
         }
     }
