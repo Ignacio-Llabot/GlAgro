@@ -244,12 +244,9 @@
 
     .areas{
         gap: 3rem; 
-        grid-template-rows: auto 200px auto;
+        grid-template-rows: auto auto auto;
         .areasText{
-            height: 60vh;
-            overflow-y: auto;
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 0px;
+            @include tamaños(fit-content, fit-content);
             font-size: 1.3rem;
     
             h3{
@@ -261,9 +258,36 @@
             }
         }
 
-        .areasButtons{
-            display: grid;
-            grid-template: auto auto / auto auto auto;
+        .areasDiv{
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto;
+            grid-template-areas: 
+                "a"
+                "b"
+                "c"
+                "d";
+
+                .areaSubTitle1{
+                    grid-area: a;
+                }
+        
+                .areaSubTitle2{
+                    grid-area: c;
+                }
+
+                .areasButtons1{
+                    grid-area: b;
+                }
+        
+                .areasButtons2{
+                    grid-area: d;
+                }
+
+                .areasButtons1, .areasButtons2{
+                    button{
+                        @include tamaños(90px, 50px);
+                    }
+                }
         }
     }
 
@@ -513,6 +537,14 @@
     
             p{
                 font-size: 13px;
+            }
+        }
+
+        .areasDiv{
+            .areasButtons1, .areasButtons2{
+                button{
+                    @include tamaños(70px, 35px);
+                }
             }
         }
     }

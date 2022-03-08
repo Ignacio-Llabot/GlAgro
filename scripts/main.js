@@ -28,35 +28,118 @@ window.onload = function () {
 	});
 }
 
-function area1(){
+function area1a(){
+	document.getElementById('changingTit')
+	.innerHTML="Gestion societária";
 	document.getElementById('changingTxt')
-	.innerHTML="jaja area 1";
+	.innerHTML="Asesoramiento en materia de contratos y/o acuerdos";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%)"
 }
 
-function area2(){
+function area2a(){
+	document.getElementById('changingTit')
+	.innerHTML="Asesoramiento legal en negociaciones:";
 	document.getElementById('changingTxt')
-	.innerHTML="jaja area 2";
+	.innerHTML="Negociaciones nacionales e internacionales con clientes y proveedores, cuando las mismas comprendan re estructuración de pasivos, créditos y/o cuentas corrientes de clientes o proveedores; gestión de riesgos, análisis de carpetas (crediticio) de clientes, recuperos de crédito";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%)"
 }
 
-function area3(){
+function area3a(){
+	document.getElementById('changingTit')
+	.innerHTML="Derechos";
 	document.getElementById('changingTxt')
-	.innerHTML="jaja area 3";
+	.innerHTML="Derecho laboral, derecho ambiental, marcas y patentes; derechos del consumidor y defensa de la competencia";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%)"
 }
 
-function area4(){
+function area4a(){
+	document.getElementById('changingTit')
+	.innerHTML="Asesoramiento";
 	document.getElementById('changingTxt')
-	.innerHTML="jaja area 4";
+	.innerHTML="Asesoramiento en materia concursal, derecho inmobiliario";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%)"
 }
 
-function area5(){
+function area5a(){
+	document.getElementById('changingTit')
+	.innerHTML="Protocolo";
 	document.getElementById('changingTxt')
-	.innerHTML="jaja area 5";
+	.innerHTML="Protocolo de la empresa familiar y gestión patrimonial";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%)"
 }
 
-function area6(){
+function area6a(){
+	document.getElementById('changingTit')
+	.innerHTML="titulo 6a";
 	document.getElementById('changingTxt')
-	.innerHTML="jaja area 6";
+	.innerHTML="area 6a";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(218,232,14,1) 0%, rgba(199,183,42,1) 100%)"
 }
+
+
+
+function area1b(){
+	document.getElementById('changingTit')
+	.innerHTML="Titulo 1b";
+	document.getElementById('changingTxt')
+	.innerHTML="Asesoramiento impositivo a personas y empresas. Liquidación de impuestos";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%)"
+}
+
+function area2b(){
+	document.getElementById('changingTit')
+	.innerHTML="Titulo 2b";
+	document.getElementById('changingTxt')
+	.innerHTML="Asesoramiento contable a empresas, contabilidad general, estados contables, auditoria de estados contables";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%)"
+}
+
+function area3b(){
+	document.getElementById('changingTit')
+	.innerHTML="Titulo 3b";
+	document.getElementById('changingTxt')
+	.innerHTML="Asesoramiento económico financiero, estados financieros, flujos de fondos, análisis de proyecto de inversión";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%)"
+}
+
+function area4b(){
+	document.getElementById('changingTit')
+	.innerHTML="Titulo 4b";
+	document.getElementById('changingTxt')
+	.innerHTML="Asesoramiento en materia laboral, liquidación de haberes, trámites jubilatorios";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%)"
+}
+
+function area5b(){
+	document.getElementById('changingTit')
+	.innerHTML="Titulo 5b";
+	document.getElementById('changingTxt')
+	.innerHTML="Asesoramiento en materia de control interno, diagnóstico, diseño r implementacion";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%)"
+}
+
+function area6b(){
+	document.getElementById('changingTit')
+	.innerHTML="Titulo 6b";
+	document.getElementById('changingTxt')
+	.innerHTML="Area 6b";
+	document.getElementById('areasTextid')
+	.style.backgroundImage = "radial-gradient(circle, rgba(179,190,19,1) 0%, rgba(91,161,12,1) 100%)"
+}
+
+
+
 
 function step1(){
 	document.getElementById('titulo1')
@@ -109,6 +192,9 @@ function step1(){
 	.src="../images/Graupera-Home-05.jpg"
 	
 }
+
+
+
 
 function step2(){
 	document.getElementById('titulo1')

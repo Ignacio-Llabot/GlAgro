@@ -524,37 +524,84 @@ body {
 .areas {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 150px auto;
-      grid-template-rows: auto 150px auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
   gap: 6rem;
   margin-top: 5%;
   margin-bottom: 5%;
   justify-items: center;
 }
 
-.areas .areasButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.areas .areasDiv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template: auto auto / auto auto;
+  gap: 4rem;
+  -webkit-column-gap: 10vw;
+          column-gap: 10vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+      grid-template-areas: "a b" "c d";
+}
+
+.areas .areasDiv .areaSubTitle1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+.areas .areasDiv .areaSubTitle2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+.areas .areasDiv .areasButtons1, .areas .areasDiv .areasButtons2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   gap: 1rem;
   margin: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.areas .areasButtons button {
-  width: 90px;
-  height: 100%;
+.areas .areasDiv .areasButtons1 button, .areas .areasDiv .areasButtons2 button {
+  width: 110px;
+  height: 70px;
   border-radius: 10px;
   -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
           box-shadow: 6.2px 12.5px 12.5px #0000004f;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ccd71b), to(#739300));
-  background-image: linear-gradient(90deg, #ccd71b 0%, #739300 100%);
+  background-image: radial-gradient(circle, #b3be13 0%, #5ba10c 100%);
   border: none;
+}
+
+.areas .areasDiv .areasButtons1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+.areas .areasDiv .areasButtons1 button {
+  background-image: radial-gradient(circle, #dae80e 0%, #c7b72a 100%);
+}
+
+.areas .areasDiv .areasButtons2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: d;
 }
 
 .areas .areasText {
@@ -564,6 +611,7 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: 6.2px 12.5px 12.5px #0000004f;
           box-shadow: 6.2px 12.5px 12.5px #0000004f;
+  width: 50%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1094,14 +1142,16 @@ body {
   /*AREAS*/
   .areas {
     gap: 3rem;
-    -ms-grid-rows: auto 200px auto;
-        grid-template-rows: auto 200px auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
   }
   .areas .areasText {
-    height: 60vh;
-    overflow-y: auto;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     font-size: 1.3rem;
   }
   .areas .areasText h3 {
@@ -1110,12 +1160,36 @@ body {
   .areas .areasText p {
     font-size: 1rem;
   }
-  .areas .areasButtons {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: auto auto;
-    -ms-grid-columns: auto auto auto;
-        grid-template: auto auto / auto auto auto;
+  .areas .areasDiv {
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        grid-template-areas: "a" "b" "c" "d";
+  }
+  .areas .areasDiv .areaSubTitle1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  .areas .areasDiv .areaSubTitle2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: c;
+  }
+  .areas .areasDiv .areasButtons1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: b;
+  }
+  .areas .areasDiv .areasButtons2 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: d;
+  }
+  .areas .areasDiv .areasButtons1 button, .areas .areasDiv .areasButtons2 button {
+    width: 90px;
+    height: 50px;
   }
   /*CONTACTO*/
   .contacto {
@@ -1310,6 +1384,10 @@ body {
   }
   .areas .areasText p {
     font-size: 13px;
+  }
+  .areas .areasDiv .areasButtons1 button, .areas .areasDiv .areasButtons2 button {
+    width: 70px;
+    height: 35px;
   }
   /*CONTACTO*/
   .contacto .contactoTitle {
