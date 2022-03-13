@@ -52,10 +52,10 @@
                 transform: rotate(-45deg) translate(35px, 35px);
           }
 
-        .navBar__Title{
+        &__Title{
             align-self: center;
         }
-        .navBar__Buttons{
+        &__Buttons{
             display: none
         }
 
@@ -100,7 +100,7 @@
             }
         }
         .mainArticle{
-            .mainArticle__Bloque1, .mainArticle__Bloque2{
+            &__Bloque1, &__Bloque2{
                 background: none;
                 background-color: transparent;
                 flex-direction: column;
@@ -128,14 +128,14 @@
                 }
             }
 
-            .mainArticle__Bloque1{
+            &__Bloque1{
                 background-image: url(../images/img01.jpg);
                 background-size: 110% 100%;
                 background-repeat: no-repeat;
                 padding-bottom: 5%;
             }
     
-            .mainArticle__Bloque2{
+            &__Bloque2{
                 background-image: url(../images/Graupera-Home-05.jpg);
                 background-size: 110% 100%;
                 background-repeat: no-repeat;
@@ -144,11 +144,11 @@
         }
     
         .clients{
-            .clients__Title{
+            &__Title{
                 font-size: 2rem;
             }
         
-            .clients__Imgs{
+            &__Imgs{
                 background: none;
                 display: grid;
                 grid-template: 1fr 1fr / 1fr 1fr;
@@ -161,7 +161,7 @@
                 }   
             }
         
-            .clients__Comments{
+            &__Comments{
                 gap: 2rem;
                 .clients__Comment1, .clients__Comment2{
                     .clients__Cite1, .clients__Name1, .clients__Cite2, .clients__Name2{
@@ -178,7 +178,7 @@
         gap: 2rem;
         .steps{
             min-width: none;
-            .steps__Step1, .steps__Step2, .steps__Step3{
+            &__Step1, &__Step2, &__Step3{
                 min-height: 82px;
                 width: 100%!important;
                 justify-content: center;
@@ -189,7 +189,7 @@
             }
         }
 
-        .trabajoSubTitle{
+        &SubTitle{
             font-size: 1.3rem
         }
 
@@ -245,7 +245,7 @@
     .areas{
         gap: 3rem; 
         grid-template-rows: auto auto auto;
-        .areasText{
+        &Text{
             @include tamaños(fit-content, fit-content);
             font-size: 1.3rem;
     
@@ -336,7 +336,7 @@
             grid-template-rows: 0.7fr 1.3fr;
             justify-items: center;
     
-            .mapInfo__Div{
+            &__Div{
                 flex-direction: row;
                 gap: 2rem;
                 width: 100%;
@@ -345,12 +345,12 @@
                     gap: 1rem;
                     margin: 0;
 
-                    .adress__Img, .location__Img{
+                    &__Img, .location__Img{
                         @include tamaños(30%, auto);
                         min-width: 58px
                     }
     
-                    .adress__Text, .location__Text{
+                    &__Text, .location__Text{
                         font-size: 16px;
                         margin: 0;
                     }
@@ -424,7 +424,7 @@
 
     .index{
         .mainArticle{
-            .mainArticle__Bloque1, .mainArticle__Bloque2{
+            &__Bloque1, &__Bloque2{
                 .mainArticle__Div{   
                     .mainArticle__Titulo1, .mainArticle__Titulo2{
                         font-size: 19px;
@@ -438,14 +438,14 @@
         }
     
         .clients{
-            .clients__Title{
+            &__Title{
                 font-size: map-get($title, mobile);
             }
 
-            .clients__Imgs{
+            &__Imgs{
                 box-shadow: none;
             }
-            .clients__Comments{
+            &__Comments{
                 .clients__Comment1, .clients__Comment2{
                     .clients__Cite1, .clients__Name1, .clients__Cite2, .clients__Name2{
                         font-size: 14px;
@@ -464,18 +464,18 @@
         margin-top: 5%;
         margin-bottom: 10%;
     
-        .trabajoTitle{
+        &Title{
             display: flex;
             justify-content: center;
             font-size: map-get($title, mobile);
         }
 
-        .trabajoSubTitle{
+        &SubTitle{
             font-size: 1.1rem
         }
     
         .steps{
-            .steps__Step1, .steps__Step2, .steps__Step3{
+            &__Step1, &__Step2, &__Step3{
                 .steps__Title1, .steps__Title2, .steps__Title3{
                     font-size: 12px;
                 }
@@ -502,7 +502,7 @@
     /*EQUIPO*/
 
     .equipo{
-        .equipoTitle{
+        &Title{
             font-size: map-get($title, mobile);
         }
     
@@ -526,11 +526,11 @@
     /*AREAS*/
 
     .areas{
-        .areasTitle{
+        &Title{
             font-size: map-get($title, mobile);
         }
     
-        .areasText{
+        &Text{
             h3{
                 font-size: 18px;
             }
@@ -540,7 +540,7 @@
             }
         }
 
-        .areasDiv{
+        &Div{
             .areasButtons1, .areasButtons2{
                 button{
                     @include tamaños(70px, 35px);
@@ -552,7 +552,7 @@
     /*CONTACTO*/
 
     .contacto{
-        .contactoTitle{
+        &Title{
             font-size: map-get($title, mobile);
         }
         .contactInfo{

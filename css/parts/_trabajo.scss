@@ -7,13 +7,13 @@
     margin-top: 5%;
     margin-bottom: 10%;
 
-    .trabajoTitle{
+    &Title{
         display: flex;
         justify-content: center;
         font-size: map-get($title, desktop);
     }
 
-    .trabajoSubTitle{
+    &SubTitle{
         display: flex;
         justify-content: center;
         font-size: 1.5rem
@@ -31,7 +31,7 @@
             color: black;
         }
 
-        .steps__Step1, .steps__Step2, .steps__Step3{
+        &__Step1, &__Step2, &__Step3{
             background-image: map-get($grad, green2);
             border-radius: 20px;
             display: flex;
@@ -64,7 +64,7 @@
             }
         }
 
-        .steps__Step3{
+        &__Step3{
             @media screen and (max-width:1199px) {
                 padding-left: 10%;
             }

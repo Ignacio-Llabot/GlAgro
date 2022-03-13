@@ -30,7 +30,7 @@ window.onload = function () {
 
 function area1a(){
 	document.getElementById('changingTit')
-	.innerHTML="Gestion societária";
+	.innerHTML="Area Juridica 1";
 	document.getElementById('changingTxt')
 	.innerHTML="Asesoramiento en materia de contratos y/o acuerdos";
 	document.getElementById('areasTextid')
@@ -39,7 +39,7 @@ function area1a(){
 
 function area2a(){
 	document.getElementById('changingTit')
-	.innerHTML="Asesoramiento legal en negociaciones:";
+	.innerHTML="Area Juridica 2";
 	document.getElementById('changingTxt')
 	.innerHTML="Negociaciones nacionales e internacionales con clientes y proveedores, cuando las mismas comprendan re estructuración de pasivos, créditos y/o cuentas corrientes de clientes o proveedores; gestión de riesgos, análisis de carpetas (crediticio) de clientes, recuperos de crédito";
 	document.getElementById('areasTextid')
@@ -48,7 +48,7 @@ function area2a(){
 
 function area3a(){
 	document.getElementById('changingTit')
-	.innerHTML="Derechos";
+	.innerHTML="Area Juridica 3";
 	document.getElementById('changingTxt')
 	.innerHTML="Derecho laboral, derecho ambiental, marcas y patentes; derechos del consumidor y defensa de la competencia";
 	document.getElementById('areasTextid')
@@ -57,7 +57,7 @@ function area3a(){
 
 function area4a(){
 	document.getElementById('changingTit')
-	.innerHTML="Asesoramiento";
+	.innerHTML="Area Juridica 4";
 	document.getElementById('changingTxt')
 	.innerHTML="Asesoramiento en materia concursal, derecho inmobiliario";
 	document.getElementById('areasTextid')
@@ -66,7 +66,7 @@ function area4a(){
 
 function area5a(){
 	document.getElementById('changingTit')
-	.innerHTML="Protocolo";
+	.innerHTML="Area Juridica 5";
 	document.getElementById('changingTxt')
 	.innerHTML="Protocolo de la empresa familiar y gestión patrimonial";
 	document.getElementById('areasTextid')
@@ -75,7 +75,7 @@ function area5a(){
 
 function area6a(){
 	document.getElementById('changingTit')
-	.innerHTML="titulo 6a";
+	.innerHTML="no";
 	document.getElementById('changingTxt')
 	.innerHTML="area 6a";
 	document.getElementById('areasTextid')
@@ -86,7 +86,7 @@ function area6a(){
 
 function area1b(){
 	document.getElementById('changingTit')
-	.innerHTML="Titulo 1b";
+	.innerHTML="Area Contable 1";
 	document.getElementById('changingTxt')
 	.innerHTML="Asesoramiento impositivo a personas y empresas. Liquidación de impuestos";
 	document.getElementById('areasTextid')
@@ -95,7 +95,7 @@ function area1b(){
 
 function area2b(){
 	document.getElementById('changingTit')
-	.innerHTML="Titulo 2b";
+	.innerHTML="Area Contable 2";
 	document.getElementById('changingTxt')
 	.innerHTML="Asesoramiento contable a empresas, contabilidad general, estados contables, auditoria de estados contables";
 	document.getElementById('areasTextid')
@@ -104,7 +104,7 @@ function area2b(){
 
 function area3b(){
 	document.getElementById('changingTit')
-	.innerHTML="Titulo 3b";
+	.innerHTML="Area Contable 3";
 	document.getElementById('changingTxt')
 	.innerHTML="Asesoramiento económico financiero, estados financieros, flujos de fondos, análisis de proyecto de inversión";
 	document.getElementById('areasTextid')
@@ -113,7 +113,7 @@ function area3b(){
 
 function area4b(){
 	document.getElementById('changingTit')
-	.innerHTML="Titulo 4b";
+	.innerHTML="Area Contable 4";
 	document.getElementById('changingTxt')
 	.innerHTML="Asesoramiento en materia laboral, liquidación de haberes, trámites jubilatorios";
 	document.getElementById('areasTextid')
@@ -122,7 +122,7 @@ function area4b(){
 
 function area5b(){
 	document.getElementById('changingTit')
-	.innerHTML="Titulo 5b";
+	.innerHTML="Area Contable 5";
 	document.getElementById('changingTxt')
 	.innerHTML="Asesoramiento en materia de control interno, diagnóstico, diseño r implementacion";
 	document.getElementById('areasTextid')
@@ -131,7 +131,7 @@ function area5b(){
 
 function area6b(){
 	document.getElementById('changingTit')
-	.innerHTML="Titulo 6b";
+	.innerHTML="no";
 	document.getElementById('changingTxt')
 	.innerHTML="Area 6b";
 	document.getElementById('areasTextid')
@@ -255,5 +255,5 @@ function step3(){
 	document.getElementById('txt1j')
 	.style.display = "none";
 	document.getElementById('img1')
-	.src="../images/Graupera-Home-07.jpg"
+	.src="../images/laptop-ge3229687e_1920.jpg"
 }

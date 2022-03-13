@@ -6,7 +6,7 @@
     gap: 6rem;
     margin-bottom: 5%;
 
-    .equipoTitle{
+    &Title{
         @extend .trabajoTitle
     }
 
@@ -16,7 +16,7 @@
         flex-direction: column;
         gap: 10%;
 
-        .profile1__Img, .profile2__Img{
+        &__Img, .profile2__Img{
             align-self: center;
             @include tamaños(45vw, auto);
             margin-bottom: 5%;
